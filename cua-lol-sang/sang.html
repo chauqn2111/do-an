@@ -63,20 +63,20 @@
 
     }
 
-    .fa-brands,
+    .chau-lsang,
     .fab {
         display: block;
         font-size: 15px;
         border: none;
     }
 
-    .fa-brands,
+    .chau-lsang,
     .fab {
         float: left;
     }
 
-    .fa,
-    .fa-brands,
+    
+    .chau-lsang,
     .fa-classic,
     .fa-regular,
     .fa-sharp,
@@ -301,7 +301,7 @@
         display: inline-block;
         width: 44%;
         height: 60px;
-        animation: doimauchu 3s infinite;
+       
     }
 
     .mo14 a {
@@ -328,30 +328,47 @@
             left: 625px;
             bottom: 30px;
         }
-
+        
         img,
         svg {
             height: auto;
             width: 133px;
             top: 10px;
         }
-
-        .bg-body-tertiary {
-            height: 60px;
+        button#login-btn {
+           bottom: 10px;
+            }
+          element.style {
+              background-color: transparent;
+          }
+          button#login-btn {
+              bottom: 1;
+              position: relative;
+              margin-bottom: -38px;
+              padding-bottom: 0px;
+          }
+                  .bg-body-tertiary {
+                      height: 60px;
         }
-
-        .collapse:not(.show) {
+        span.sc_layouts_item_details_line2 {
+   
+        position: absolute;
+        top: 6px;
+        left: 19px;
+          }
+              .collapse:not(.show) {
             display: block;
         }
-
-        [type=button]:not(:disabled),
-        [type=reset]:not(:disabled),
-        [type=submit]:not(:disabled),
-        button:not(:disabled) {
-            display: none;
+        button {
+          display: block ;
         }
-
-        .navbar-nav .nav-link.active,
+        span.navbar-toggler-icon {
+        display: none !important;
+        }
+        i.fa.fa-search {
+    position: absolute;
+    top: 67px ; }
+       .navbar-nav .nav-link.active,
         .navbar-nav .nav-link.show {
             width: 100%;
             margin-left: 25px;
@@ -375,6 +392,19 @@
             max-width: 100%;
         }
     }
+    @media only screen and (max-width: 480px){
+.fa-bag-shopping:before, .fa-shopping-bag:before {
+    border: none;
+    position: relative;
+    left: 240px;
+    bottom: 65px;
+    padding: 5px;
+    position: absolute;
+    display: inline-flex;
+    /* margin: 0; */
+    /* margin-right: 17px; */
+    /* margin-left: 40px; */
+}}
 
     /* mobile */
     @media only screen and (max-width: 480px) {
@@ -385,7 +415,9 @@
         .justify-content-between {
             display: none;
         }
-
+        span.navbar-toggler-icon {
+    display: block !important;
+          }
         img,
         svg {
             height: auto;
@@ -399,13 +431,15 @@
             display: inline-block;
             border: 0px;
         }
-
+        ul.mona {
+            z-index: 10;
+          }
         .fa-bag-shopping:before,
         .fa-shopping-bag:before {
             border: none;
             position: relative;
-            left: 265px;
-            bottom: 60px;
+            left: 345px;
+            bottom: 45px;
             padding: 5px;
             position: absolute;
             display: inline-flex;
@@ -427,7 +461,7 @@
         .fa-search:before {
             position: relative;
             top: -43px;
-            left: 260px;
+            left: 353px;
         }
 
         .search-input {
@@ -684,10 +718,11 @@
                                             <li class="menu-item"><a href="#"
                                                     style="color: #6b6b6b; text-decoration: none;">
                                                     <span class="sc_layouts_item_details_line1">
-                                                        <button id="login-btn" style="background-color: #fff1f14f;">Đăng Nhập</button>
+                                                        <button id="login-btn" style="background-color:transparent;">Longin or</button>
                                                         <div class="modal" style="display: none;">
                                                             <div class="modal-content">
                                                               <span class="close" style="top: -13px;">&times;</span>
+                                                              <form action="">
                                                               <div class="input-container" style="margin-top: 40px;">
                                                                 <label for="email">Email:</label>
                                                                 <input type="email" id="email" required />
@@ -697,8 +732,9 @@
                                                                 <input type="password" id="password" required/>
                                                               </div>
                                                               <div class="btn-container">
-                                                                <button class="btn" style="color: #2a2a2a;">Đăng nhập</button>
+                                                                <button type="submit" class="btn" style="color: #585555;">Longin or</button>
                                                               </div>
+                                                              </form>
                                                             </div>
                                                           </div>
                                                     </span>
@@ -719,16 +755,16 @@
                                         <div class="socials_wrap sc_item_content">
                                             <a target="_blank" href="https://www.facebook.com/profile.php?id=100041604100887"
                                                 class="social_item social_item_style_icons sc_icon_type_icons social_item_type_icons"
-                                                rel="nofollow"><span class="fa-brands fa-facebook-f"
+                                                rel="nofollow"><span class="fa-brands fa-facebook-f chau-lsang"
                                                     style="color: #000000;"><span
                                                         class="icon-facebook-1"></span></span></a>
                                             <a target="_blank" href="https://twitter.com/themes_ancora"
                                                 class="social_item social_item_style_icons sc_icon_type_icons social_item_type_icons"
-                                                rel="nofollow"><span class="fa-brands fa-twitter"
+                                                rel="nofollow"><span class="fa-brands fa-twitter chau-lsang"
                                                     style="color: #000000;"></span></a>
                                             <a target="_blank" href="https://www.instagram.com/ancora_themes/"
                                                 class="social_item social_item_style_icons sc_icon_type_icons social_item_type_icons"
-                                                rel="nofollow"><span class="fa-brands fa-instagram"
+                                                rel="nofollow"><span class="fa-brands fa-instagram chau-lsang"
                                                     style="color: #000000;"><span
                                                         class="icon-instagram"></span></span></a>
                                         </div>
@@ -973,7 +1009,7 @@
         </div>
     </header>
     <main>
-        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-interval="1000">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide my-5" data-interval="1000">
             <div class="carousel-indicators">
               <button
                 type="button"
@@ -1076,56 +1112,49 @@
                   <li class="">
               <a
                 href="#"
-                class="sc_item_filters_all"
+                class="sc_item_filters_all chau-vip"
                 data-tab="all"
-                data-page="1"
-                ><font style="vertical-align: inherit"
-                  ><font style="vertical-align: inherit"
-                    >Bản Phát Hành Mới Nhất</font
-                  ></font
-                ></a
+                data-page="1">
+                
+                    Bản Phát Hành Mới Nhất
+                  
+                </a
               >
                   </li>
                 </div>
                 <div class="col">
                   <li class="">
-              <a
-                href="#blogger_filters_190_content"
-                data-tab="190"
-                data-page="1"
-                class=""
-                ><font style="vertical-align: inherit"
-                  ><font style="vertical-align: inherit"
-                    >Giải Người Chiến Thắng</font
-                  ></font
-                ></a
-              >
+                    <a
+                      href="#blogger_filters_190_content"
+                      data-tab="190"
+                      data-page="1"
+                      class="chau-vip">
+                      
+                          Giải Người Chiến Thắng
+                      
+                      </a>
                   </li>
                 </div>
                 <div class="col">
                   <li class="">
-              <a
-                href="#blogger_filters_189_content"
-                data-tab="189"
-                data-page="1"
-                class=""
-                ><font style="vertical-align: inherit"
-                  ><font style="vertical-align: inherit">Bán Chạy Nhất Tuần</font></font
-                ></a
-              >
+                    <a
+                      href="#blogger_filters_189_content"
+                      data-tab="189"
+                      data-page="1"
+                      class="chau-vip">
+                     Bán Chạy Nhất Tuần
+                    </a>
                   </li>
                 </div>
                 <div class="col">
                   <li class="sc_item_filters_tabs_active">
-              <a
-                href="#blogger_filters_188_content"
-                data-tab="188"
-                data-page="1"
-                class="active"
-                ><font style="vertical-align: inherit"
-                  ><font style="vertical-align: inherit">Sách Mới Sắp Ra Mắt</font></font
-                ></a
-              >
+                    <a
+                      href="#blogger_filters_188_content"
+                      data-tab="188"
+                      data-page="1"
+                      class="active chau-vip"
+                      ><font style="vertical-align: inherit"
+                        ><font style="vertical-align: inherit">Sách Mới Sắp Ra Mắt</font></font></a>
                   </li>
                 </div>
               
@@ -1391,8 +1420,8 @@
             <form>
               <div class="form-group">
                 
-                <input type="email" id="email" name="email" placeholder="Nhập email của bạn" required>
-                <button type="submit" id="submit-btn" disabled>Giữ Liên Lạc</button>
+                <input type="email" name="email" placeholder="Nhập email của bạn" required>
+                <button type="submit" id="submit-btn">Giữ Liên Lạc</button>
               </div>
             </form>
             <div class="privacy-policy">
@@ -1400,7 +1429,7 @@
               <label for="agree">Tôi đồng ý với Chính sách bảo mật</label>
             </div>
           </div>
-          <h3 class="solog sc_layouts_1">Chọn Sách Của Bạn!</h3>
+          <h3 class="solog sc_layouts_1" style="font-size: 35px;">Chọn Sách Của Bạn!</h3>
           <div
             style="
               background-color: rgb(151, 153, 153);
@@ -1657,8 +1686,8 @@
         }
 
         // Gọi hàm kiểm tra mỗi khi input email hoặc checkbox thay đổi
-        emailInput.addEventListener("input", checkInputs);
-        privacyCheckbox.addEventListener("change", checkInputs);
+        // emailInput.addEventListener("input", checkInputs);
+        // privacyCheckbox.addEventListener("change", checkInputs);
         
         
 
