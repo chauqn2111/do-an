@@ -173,7 +173,7 @@ a.chau-vip {
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      max-height: 100vh;
+      max-height: 120vh;
       height: 400px;
       margin-top: 20px;
     }
@@ -248,7 +248,7 @@ a.chau-vip {
       position: relative;
       padding: 0 2px;
       margin: 0 2px;
-      
+      overflow: hidden;
     }
     .imgchon img {
       /* max-inline-size: 230px; */
@@ -344,3 +344,7 @@ a.chau-vip {
     .wapkham {
       animation: doimauchu 6s infinite;
     }
+    @media only screen and (max-width: 769px)
+       button:not(:disabled) {
+        
+       }
