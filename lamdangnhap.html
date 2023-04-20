@@ -12,7 +12,6 @@
         href="https://scontent.fdad7-1.fna.fbcdn.net/v/t39.30808-6/337100965_3497961447157482_3915042219012048561_n.jpg?stp=dst-jpg_p843x403&_nc_cat=109&ccb=1-7&_nc_sid=5cd70e&_nc_ohc=GqPd9OqzQGwAX-GYRkw&_nc_ht=scontent.fdad7-1.fna&oh=00_AfAZk-v5L-CrKcSJvZGibtMWgua-aiMJW6asjQTnvwnTpw&oe=643901BD"
         type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
 </head>
 <style>
     * {
@@ -22,9 +21,7 @@
     }
 
     /* thanh đièu hướng trên */
-    .sc_layouts_item_details_line1 {
-        animation: doimauchu 3s infinite;
-    }
+
 
     .input-group {
         position: relative;
@@ -134,13 +131,8 @@
         animation: doimauchu 3s infinite;
     }
 
-    .sc_layouts_item_details_line2 {
-        color: #ff0000;
-    }
 
-    .sc_layouts_item_details_line2:hover {
-        color: #000000;
-    }
+
 
     :hover.fa-facebook-f:before {
         color: #006aff;
@@ -286,7 +278,7 @@
         display: inline-block;
         width: 44%;
         height: 60px;
-
+        animation: doimauchu 3s infinite;
     }
 
     .mo14 a {
@@ -356,10 +348,40 @@
             font-size: 100%;
             max-width: 100%;
         }
+
+
+
+
     }
 
     /* mobile */
     @media only screen and (max-width: 480px) {
+        .search-input.show {
+            width: 345px;
+        }
+
+        input.search_field.fill_inited {
+
+            width: 265px;
+            height: 50px;
+
+        }
+
+        .fa-xmark:before {
+            margin-right: 50px;
+        }
+
+        button#icon-search {
+            position: relative;
+            top: 181px;
+        }
+
+        ::before {
+
+            left: 260px;
+            position: relative;
+        }
+
         .bg-body-tertiary {
             height: 0px;
         }
@@ -504,12 +526,13 @@
         display: block;
     }
 
-    [type=button]:not(:disabled),
-    [type=reset]:not(:disabled),
-    [type=submit]:not(:disabled),
-    button:not(:disabled) {
+    button#icon-search {
         border: none;
-        background-color: #ffffff;
+        background-color: rgb(255, 255, 255);
+    }
+
+    button#bth1 {
+        border: none;
     }
 
     #icon-search {
@@ -561,150 +584,145 @@
         display: none;
     }
 
-    .sc_layouts_title_content {
-        background-color: #000000;
-        color: #DEDEDE;
-        padding: 20px;
-
+    /* phần đăng nhập */
+    .chau-chau {
+        position: absolute;
+        top: 10px;
+        right: 13px;
+        padding: 12px;
+        margin: 5px;
     }
 
-    h1.sc_layouts_title_caption {
+    .chau-loi {
         display: flex;
-        justify-content: center;
-    }
-
-    .breadcrumbs {
-        display: flex;
-        justify-content: center;
-        font-size: 14px;
-    }
-
-    a.breadcrumbs_item.home.underline_hover {
-        color: #b7b7b7;
-        text-decoration: none;
-    }
-
-
-
-    .accordion-header {
-
-        display: flex;
-        justify-content: space-between;
         align-items: center;
-        cursor: pointer;
+        justify-content: center;
+        width: 100%;
     }
 
-    .accordion-body {
-        display: none;
-
+    .chau-sang {
+        border: none;
     }
 
-    .sida {
-        border-bottom: 1px solid #6b6b6b;
-        width: 100px;
-        height: 20px;
-    }
-
-    span.sadi.my-2 {
+    .modal-header {
         display: flex;
-        flex-direction: column;
-        cursor: pointer;
-        font-size: 17px;
-        font-weight: 500;
+        align-items: center;
+        justify-content: center;
     }
 
-    :hover#sanghi {
-        color: #ff0000;
+    #exampleModalLabel {
+        color: rgb(81, 58, 58);
     }
 
-    img.attachment-woocommerce_thumbnail.size-woocommerce_thumbnail {
-        width: 80px;
-        height: 110px;
-    }
-
-
-
-    li {
-        list-style: none;
-    }
-
-    .cabi {
+    .chau-12-12 {
         display: flex;
-        padding: 50px;
-        background-color: #c40000;
-        font-size: 40px;
+    }
+
+    .col-form-label {
+        min-width: 80px;
+        display: inline-flex;
+    }
+
+    .form-control {
+        flex: 1;
+    }
+
+    .chontp {
+        text-align: center;
 
     }
 
-    .rubi {
-        color: #e0e0e0;
-        animation: doimauchu 3s infinite;
+    #sex {
+        margin: 0 13px;
     }
 
-    .sc_button_text {
-        background-color: #c40000;
-        font-size: 17px;
-        padding: 10px 30px;
-        color: #000000;
-        position: relative;
-        left: 150px;
-        border: 1px solid #000000;
+    .chau-huan {
+        display: flex;
+        gap: 15px;
     }
 
+    .modal-container {
 
-
-    a {
-        text-decoration: none;
+        text-align: center;
     }
 
-    span.product-title {
-        color: #000000;
+    .modal {
+        --bs-modal-width: 800px
     }
 
-    h4 {
+    .modal-dialog {
+        margin-top: 65px;
+    }
+
+    .modal-footer {
+        justify-content: space-between;
+    }
+
+    .chau-12 {
+        text-align: right;
+    }
+
+    .form-action {
+        justify-content: center;
+        display: flex;
+    }
+
+    .laviem {
+        background-color: transparent;
+        border: solid #6a6767eb 0.7px;
+        padding: 5px 30px;
+        text-transform: uppercase;
+        width: 80%;
+
+    }
+
+    .laviem:hover {
+        border: 0;
+        opacity: 0.6;
         font-size: 20px;
     }
 
-    @media only screen and (max-width: 768px) {
-        .sc_button_text {
-            position: relative;
-            left: 10px;
-            display: flex;
-            top: 20px;
-        }
+    :hover.btn-close.chau-chau {
+        transform: rotate(180deg);
     }
 
-    @media only screen and (max-width: 320px) {
+    .laviemm {
+        width: 30%;
+        border: solid rgb(165, 152, 127) 0.8;
+    }
 
+    .modal.fade {
+        transform: translateY(-100%);
+        transition: transform 0.6s ease;
+    }
 
-        .sc_button_text {
-            position: relative;
-            left: -250px;
-            display: flex;
-            top: 200px;
+    .modal.fade.show {
+        transform: translateY(0);
+    }
 
-        }
+    .elementor-widget-container {
+        display: flex;
+        padding: 0px 0px;
 
-        .rubi {
-            position: relative;
-            right: 50px;
-        }
+    }
 
-        .animate__zoomInDown {
-            position: relative;
-            right: 20px;
-        }
+    .btn.chau-sang {
+        border: none;
+        color: #777777;
+        padding: 1px 1px;
+        font-size: 14px;
+        font-weight: 500;
 
+    }
 
+    .btn.sangpp {
+        color: rgb(255, 0, 0);
+        border: none;
+        padding: 1px 3px;
+        font-size: 14px;
+        font-weight: 500;
     }
 </style>
-<script>
-    $(document).ready(function () {
-        $('.accordion-header').click(function () {
-            $(this).parent().children('.accordion-body').slideToggle();
-        });
-    });
-</script>
 
 <body>
 
@@ -725,21 +743,125 @@
                             <div
                                 class="sc_layouts_item elementor-element elementor-element-2b15188 sc_fly_static elementor-widget elementor-widget-trx_sc_layouts_login trx_addons_parallax_layers_inited trx_addons_parallax_blocks_inited">
                                 <div class="elementor-widget-container">
-                                    <div
-                                        class="sc_layouts_login sc_layouts_menu sc_layouts_menu_default inited inited_kbd">
-                                        <ul
-                                            class="sc_layouts_login_menu sc_layouts_menu_nav sc_layouts_menu_no_collapse inited_cache prepared inited sf-js-enabled sf-arrows">
-
-                                            <li class="menu-item"><a href="#"
-                                                    style="color: #6b6b6b; text-decoration: none;"><span
-                                                        class="sc_layouts_item_details_line1">Login
-                                                        or</span>
-                                                    <clear></clear>
-                                                    <span class="sc_layouts_item_details_line2">Register</span>
-                                                </a>
-                                            </li>
-                                        </ul>
+                                    <button type="button" class="btn  chau-sang" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Login or
+                                    </button>
+                                    <div class="modal-container">
+                                        <div class="modal fade" id="exampleModal" tabindex="-1"
+                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header chau-loi">
+                                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Thông Tin
+                                                            Đăng Nhập</h1>
+                                                        <button type="button" class="btn-close chau-chau"
+                                                            data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form>
+                                                            <div class="mb-3 chau-12-12">
+                                                                <label for="recipient-name"
+                                                                    class="col-form-label">Email:</label>
+                                                                <input type="email" class="form-control"
+                                                                    id="recipient-name" placeholder="hãy nhập email"
+                                                                    required autofocus>
+                                                            </div>
+                                                            <div class="mb-3 chau-12-12">
+                                                                <label for="message-text" class="col-form-label">Mật
+                                                                    Khẩu:</label>
+                                                                <input type="password" class="form-control"
+                                                                    id="message-text"
+                                                                    placeholder="hãy nhập mk của bạn..."
+                                                                    required></input>
+                                                            </div>
+                                                            <div class="mb-3 chau-12-12 input-row">
+                                                                <label for="cyty"
+                                                                    class="col-form-label">Tỉnh/TPhố</label>
+                                                                <select name="cyty" id="cyty" class="form-control">
+                                                                    <option class="chontp" value="" selected>--vui lòng
+                                                                        chọn Tp</option>
+                                                                    <option class="chontp" value="1">Hà Nội</option>
+                                                                    <option class="chontp" value="2">Tp-H C M</option>
+                                                                    <option class="chontp" value="3"> Tp Đà Nẵng
+                                                                    </option>
+                                                                    <option class="chontp" value="4">Tp Tam KÌ</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="mb-3 chau-12-12 chau-huan">
+                                                                <label for="">Giới Tính</label>
+                                                                <input type="radio" name="sex" value="0"
+                                                                    checked>Nữ</input>
+                                                                <input type="radio" name="sex" value="1">Nam</input>
+                                                                <input type="radio" name="sex" value="2">Giới Tính
+                                                                Khác</input>
+                                                            </div>
+                                                            <div class="mb-3 chau-12-12">
+                                                                <label for="" class="col-form-label">Tuổi</label>
+                                                                <input type="date" class="form-control"></input>
+                                                            </div>
+                                                            <div class="mb-3 chau-12-12 form-action">
+                                                                <input type="reset" class="laviemm">
+                                                            </div>
+                                                            <div class="form-action">
+                                                                <button class="laviem" type="submit">Enter</button>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-bs-dismiss="modal">Close</button>
+                                                        <button type="submit" class="btn btn-primary chau-12">Đăng
+                                                            Nhập</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
+                                    <div class="modal fade" id="exampleModalToggle" aria-hidden="true"
+                                        aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Modal 1
+                                                    </h1>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    Show a second modal and hide this one with the button below.
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button class="btn btn-primary"
+                                                        data-bs-target="#exampleModalToggle2"
+                                                        data-bs-toggle="modal">Open
+                                                        second modal</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true"
+                                        aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Modal 2
+                                                    </h1>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    Hide this modal and show the first with the button below.
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button class="btn btn-primary" data-bs-target="#exampleModalToggle"
+                                                        data-bs-toggle="modal">Back to
+                                                        first</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="btn sangpp " data-bs-target="#exampleModalToggle"
+                                        data-bs-toggle="modal">Register</button>
                                 </div>
 
                             </div>
@@ -976,7 +1098,7 @@
 
                     <div class="search">
                         <button class="search-button">
-                            <i class="fa fa-search"></i>
+                            <i id="sangf" class="fa fa-search"></i>
                         </button>
                         <div id="bth" class="search-input">
                             <form role="search" method="get" class="search_form" action="#" data-inited-validation="1">
@@ -1004,200 +1126,6 @@
         </div>
     </header>
     <main>
-
-        <div class="elementor-widget-container">
-            <div class="sc_layouts_title sc_align_center with_content without_image without_tint">
-                <div class="sc_layouts_title_content">
-                    <div class="sc_layouts_title_title">
-                        <h1 class="sc_layouts_title_caption">Shop</h1>
-                    </div>
-                    <div class="sc_layouts_title_breadcrumbs">
-                        <div class="breadcrumbs"><a class="breadcrumbs_item home underline_hover"
-                                href="https://booklovers.ancorathemes.com/">Home</a><span
-                                class="breadcrumbs_delimiter"></span>-<span class="breadcrumbs_item current">Shop</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container my-5">
-            <div class="row">
-                <div class="col-12 col-lg-4">
-                    <div class="wapper">
-                        <div class="accordion">
-                            <div class="accordion-header">
-                                <h4>CATEGORY</h4>
-                                <i class="fa-solid fa-angle-down" style="color: #000000;"></i>
-                            </div>
-                            <div class="sida"></div>
-                            <div class="accordion-body">
-                                <span id="sanghi" class=" sadi my-2">All categories</span>
-                                <span id="sanghi" class=" sadi my-2">Uncategorized</span>
-                                <span id="sanghi" class=" sadi my-2">Drama</span>
-                                <span id="sanghi" class=" sadi my-2">Mystery</span>
-                                <span id="sanghi" class=" sadi my-2">Novels</span>
-                                <span id="sanghi" class=" sadi my-2">Recipe Books</span>
-                            </div>
-                        </div>
-
-                        <div class="accordion my-5">
-                            <div class="accordion-header">
-                                <h4>AUTHOR</h4>
-                                <i class="fa-solid fa-angle-down" style="color: #000000;"></i>
-                            </div>
-                            <div class="sida"></div>
-                            <div class="accordion-body">
-
-                                <span id="sanghi" class=" sadi my-2">Burt Geller</span>
-                                <span id="sanghi" class=" sadi my-2">Candy Carson</span>
-                                <span id="sanghi" class=" sadi my-2">Drew Berrymore</span>
-                                <span id="sanghi" class=" sadi my-2">Karen Perry</span>
-                                <span id="sanghi" class=" sadi my-2">Richard Mann</span>
-
-                            </div>
-                        </div>
-                        <div class="accordion my-5">
-                            <div class="accordion-header">
-                                <h4>FORMAT</h4>
-                                <i class="fa-solid fa-angle-down" style="color: #000000;"></i>
-                            </div>
-                            <div class="sida"></div>
-                            <div class="accordion-body">
-                                <span id="sanghi" class=" sadi my-2">Online Book</span>
-                                <span id="sanghi" class=" sadi my-2">Paper Book</span>
-
-
-                            </div>
-                        </div>
-                        <div class="accordion my-5">
-                            <div class="accordion-header">
-                                <h4>RATING</h4>
-                                <i class="fa-solid fa-angle-down" style="color: #000000;"></i>
-                            </div>
-                            <div class="sida"></div>
-                            <div class="accordion-body">
-                                <span id="sanghi" class=" sadi my-2">Burt Geller</span>
-                                <span id="sanghi" class=" sadi my-2">Candy Carson</span>
-                                <span id="sanghi" class=" sadi my-2">Drew Berrymore</span>
-                                <span id="sanghi" class=" sadi my-2">Karen Perry</span>
-                                <span id="sanghi" class=" sadi my-2">Richard Mann</span>
-
-                            </div>
-                        </div>
-
-                        <div class="accordion my-5">
-                            <div class="accordion-header">
-                                <h4>PRICE</h4>
-                                <i class="fa-solid fa-angle-down" style="color: #000000;"></i>
-                            </div>
-                            <div class="sida"></div>
-                            <div class="accordion-body">
-                                <span id="sanghi" class=" sadi my-2">Burt Geller</span>
-                                <span id="sanghi" class=" sadi my-2">Candy Carson</span>
-                                <span id="sanghi" class=" sadi my-2">Drew Berrymore</span>
-                                <span id="sanghi" class=" sadi my-2">Karen Perry</span>
-                                <span id="sanghi" class=" sadi my-2">Richard Mann</span>
-
-                            </div>
-                        </div>
-
-                        <h4
-                            style="border-bottom: 1px solid #a8a8a8;width: 70px; height: 100px; display: flex; column-gap: 125px; align-items: center; color: #000000; white-space: nowrap;">
-                            RECENT PRODUCTS <i class="fa-solid fa-chevron-down"
-                                style="color: #000000; font-size: 15px;"></i>
-                        </h4>
-                        <ul class="product_list_widget my-5">
-                            <li class="">
-                                <a href="https://booklovers.ancorathemes.com/product/its-a-really-strange-story/">
-                                    <img width="400" height="600"
-                                        src="https://booklovers.ancorathemes.com/wp-content/uploads/2020/05/book12-copyright-400x600.jpg"
-                                        class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt=""
-                                        decoding="async" loading="lazy"> <span class="product-title"> a Really
-                                        Strange Story</span>
-                                </a>
-
-                                <span class="woocommerce-Price-amount amount"><bdi><span
-                                            class="woocommerce-Price-currencySymbol">$</span>8.00</bdi></span> – <span
-                                    class="woocommerce-Price-amount amount"><bdi><span
-                                            class="woocommerce-Price-currencySymbol">$</span>18.00</bdi></span>
-                            </li>
-                            <li class="my-3">
-                                <a href="https://booklovers.ancorathemes.com/product/new-galaxy/">
-                                    <img width="400" height="600"
-                                        src="https://booklovers.ancorathemes.com/wp-content/uploads/2020/05/book8-copyright-400x600.jpg"
-                                        class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt=""
-                                        decoding="async" loading="lazy"> <span class="product-title">New Galaxy</span>
-                                </a>
-
-                                <span class="woocommerce-Price-amount amount"><bdi><span
-                                            class="woocommerce-Price-currencySymbol">$</span>7.90</bdi></span> – <span
-                                    class="woocommerce-Price-amount amount"><bdi><span
-                                            class="woocommerce-Price-currencySymbol">$</span>16.90</bdi></span>
-                            </li>
-                        </ul>
-
-
-
-
-
-                    </div>
-
-
-
-
-
-
-
-
-
-                </div>
-                <div class="col-12 col-lg-8">
-                    trống trơn</div>
-            </div>
-
-            <!--  -->
-            <div class="cabi">
-                <div class="rubi">
-                    Get -30% purchase
-                </div>
-                <div class="ribi animate__animated  animate__zoomInDown animate__infinite">on order over $299.00</div>
-                <a href="#"
-                    class="sc_button sc_button_shadow hide_on_mobile sc_button_default sc_button_size_normal sc_button_icon_left"><span
-                        class="sc_button_text"><span class="sc_button_title">MORE INFO</span></span></a>
-            </div>
-
-
-
-
-        </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     </main>
     <footer>
@@ -1315,6 +1243,9 @@
 
         searchButton.addEventListener('click', toggleSearch);
         toggleButton.addEventListener('click', toggleSearch);
+
+
+
     </script>
 </body>
 
