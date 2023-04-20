@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+  </head>
+  <style>
+    /* .modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 999;
+    }
+
+    .modal-content {
+      width: 500px;
+      height: 300px;
+      background-color: white;
+      padding: 20px;
+      position: relative;
+    }
+
+    .close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    .input-container {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+    }
+
+    .input-container label {
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .input-container input {
+      height: 30px;
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    .btn-container {
+      display: flex;
+      justify-content: center;
+    }
+
+    .btn {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    } */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .chau-chau {
+      position: absolute;
+    top: 10px;
+    right: 13px;
+    padding: 12px;
+    margin: 5px;
+    }
+    .chau-loi {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+    .chau-sang {
+      background-color:transparent;
+      color: darkgreen;
+      border: 0.8px solid rgb(77, 64, 40);
+    }
+    .modal-header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #exampleModalLabel {
+      color: rgb(81, 58, 58);
+    }
+   
+    .chau-12-12 {
+      display: flex;
+    }
+    .col-form-label {
+      min-width: 80px;
+      display: inline-flex;
+    }
+    .form-control {
+      flex: 1;
+    }
+    .chontp {
+      text-align: center;
+
+    }
+    #sex {
+      margin: 0 13px;
+    }
+    .chau-huan {
+      display: flex;
+      gap: 15px;
+    }
+    .modal-container {
+      
+      text-align: center;
+    }
+    .modal {
+    --bs-modal-width: 800px
+    }
+    .modal-dialog {
+    margin-top: 65px;}
+
+    .modal-footer {
+      justify-content:space-between ;
+    }
+    .chau-12 {
+      text-align: right;
+    }
+    .form-action {
+      justify-content: center;
+      display: flex;
+    }
+    .laviem {
+      background-color: transparent;
+      border: solid #6a6767eb 0.7px;
+      padding: 5px 30px;
+      text-transform: uppercase;
+      width: 80%;
+      background-color: aquamarine;
+    }
+    .laviem:hover {
+      border: 0;
+      opacity: 0.6;
+      font-size: 20px;
+    }
+    .btn-close.chau-chau {
+      transition: all ease 1s;
+    }
+    :hover.btn-close.chau-chau {
+      transform: rotate(180deg);
+      
+    }
+    .laviemm {
+      width: 30%;
+      border: solid rgb(165, 152, 127) 0.8;
+    }
+    .modal.fade {
+      transform: translateY(-100%);
+      transition: transform 0.6s ease;
+      }
+
+      .modal.fade.show {
+      transform: translateY(0);
+      }
+      /* phóng to ảnh */
+     
+      .image-container {
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+      }
+      
+      .image-container img {
+        width: 100%;
+        height: 100%;
+        transition: transform 0.5s;
+      }
+      
+      .image-container:hover img {
+        transform: scale(1.2);
+      }
+      /* accorion */
+      .accordion-item:first-of-type .accordion-button {
+    /* border-top-left-radius: var(--bs-accordion-inner-border-radius); */
+    border-top-right-radius: var(--bs-accordion-inner-border-radius);
+    background-color: transparent;
+    }
+    button.chau-11-12 {
+      border: none;
+      background-color: transparent;
+    }
+    button.accordion-button.chau-11-12 {
+    background-color: transparent;
+      }
+      button.accordion-button {
+    background-color: transparent !important;
+      }
+      /* xóa gạch chân của tiêu đề  */
+      .accordion-button:not(.collapsed) {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    }
+    /*  */
+    /* xóa viền xanh mờ của tiêu đề */
+    .accordion-item {
+    border: 0;
+      }
+      .accordion-item {
+          border: 0;
+      }
+      .accordion-button:focus {
+          box-shadow: none !important;
+          outline: none !important;
+      }
+      .my-accordion button:focus {
+        outline: none;
+    }
+    /*  */
+  </style>
+  <body>
+      <button type="button" class="btn btn-primary chau-sang" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Đăng Nhập</button>
+        <div class="modal-container">
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header chau-loi">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Thông Tin Đăng Kí</h1>
+                  <button type="button" class="btn-close chau-chau" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3 chau-12-12">
+                      <label for="recipient-name" class="col-form-label">Email:</label>
+                      <input type="email" class="form-control" id="recipient-name" placeholder="hãy nhập email"required autofocus>
+                    </div>
+                    <div class="mb-3 chau-12-12">
+                      <label for="message-text" class="col-form-label">Mật Khẩu:</label>
+                      <input type="password" class="form-control" id="message-text" placeholder="hãy nhập mk của bạn..."required></input>
+                    </div>
+                    <div class="mb-3 chau-12-12 input-row">
+                      <label for="cyty" class="col-form-label">Tỉnh/TPhố</label>
+                      <select name="cyty" id="cyty" class="form-control">
+                        <option class="chontp" value="" selected>--vui lòng chọn Tp</option>
+                        <option class="chontp" value="1">Hà Nội</option>
+                        <option class="chontp" value="2">Tp-H C M</option>
+                        <option class="chontp" value="3"> Tp Đà Nẵng</option>
+                        <option class="chontp" value="4">Tp Tam KÌ</option>
+                      </select>
+                    </div>
+                    <div class="mb-3 chau-12-12 chau-huan">
+                      <label for="">Giới Tính</label>
+                      <input type="radio" name="sex" value="0" checked>Nữ</input>
+                      <input type="radio" name="sex" value="1">Nam</input>
+                      <input type="radio" name="sex" value="2">Giới Tính Khác</input>
+                    </div>
+                    <div class="mb-3 chau-12-12">
+                      <label for="" class="col-form-label">Tuổi</label>
+                      <input type="date" class="form-control"></input>
+                    </div>
+                    <div class="mb-3 chau-12-12 form-action">
+                      <input type="reset" class="laviemm">
+                    </div>
+                    <div class="form-action">
+                      <button class="laviem" type="submit">Enter</button>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="submit" class="btn btn-primary chau-12">Save Imformation</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- bảng đăng nhập và đăng kí -->
+        <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Modal 1</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                Show a second modal and hide this one with the button below.
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Open second modal</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Modal 2</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                Hide this modal and show the first with the button below.
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to first</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Open first modal</button>
+
+
+        <!-- <button id="login-btn">Đăng nhập</button>
+
+          <div class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <div class="input-container">
+                <label for="email">Email:</label>
+                <input type="email" id="email" />
+              </div>
+              <div class="input-container">
+                <label for="password">Mật khẩu:</label>
+                <input type="password" id="password" />
+              </div>
+              <div class="btn-container">
+                <button class="btn">Đăng nhập</button>
+              </div>
+            </div>
+          </div> --> 
+
+        <!-- accorion -->
+   
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Accordion Item #1
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show">
+              <div class="accordion-body">
+                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed chau-11-12" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Accordion Item #2
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse show" >
+              <div class="accordion-body">
+                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Accordion Item #3
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse show">
+              <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <!-- ảnh phóng to  -->
+        <div class="image-container">
+          <img
+            src="http://127.0.0.1:5502/img/images/surge-protection-thumb-G4.jpg" alt="..." />
+        </div>
+          
+          <!-- <script>
+              var loginBtn = document.getElementById('login-btn');
+              var modal = document.querySelector('.modal');
+              var closeBtn = document.querySelector('.close');
+            
+              loginBtn.addEventListener('click', function() {
+                modal.style.display = 'flex';
+              });
+            
+              closeBtn.addEventListener('click', function() {
+                modal.style.display = 'none';
+              });
+            </script> -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

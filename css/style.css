@@ -317,3 +317,51 @@ button.btn.btn-outline-info.monnn:hover {
   .thongtin:hover i {
     transform: translateX(10px);
   }
+  
+  .active {
+    max-height: 1245px;
+  }
+  .sc_layouts_1 {
+    font-size: 30px;
+    font-weight: 100;
+    color: rgb(138, 138, 138);
+    animation: doimauchu 6s infinite;
+  }
+  .wapkham {
+    animation: doimauchu 6s infinite;
+  }
+@keyframes doimauchu {
+  0% {
+      color: #f1c40f;
+  }
+  10% {
+    color: rgb(26, 23, 23);
+  }
+
+  20% {
+      color: #e74c3c;
+  }
+  30% {
+    color: #0ed6e8;
+  }
+  40% {
+    color: #00f867;}
+  50% {
+      color: #412a77;
+  }
+  60% {
+    color: #e010f3;
+  }
+  70% {
+      color: #2ecc71;
+  }
+  80% {
+    color: #f03988;
+  }
+  90% {
+    color: coral;
+  }
+  100% {
+      color: #9742a0;
+  }
+}
