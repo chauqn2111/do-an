@@ -697,6 +697,75 @@
 
 
     }
+
+    .accordion-body {
+        display: block;
+    }
+
+    .csb {
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
+
+
+    }
+
+    .csv {
+        color: #6b6b6b;
+
+    }
+
+    button.accordion-button.collapsed {
+        font-weight: 500;
+
+
+    }
+
+    .accordion-body-y {
+        border-radius: 10px;
+        border: 1px solid #000000;
+
+        display: block;
+        padding: 0px 20px;
+
+    }
+
+    .csf {
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    :hover.csf {
+        background-color: #616161;
+        color: #e0e0e0;
+
+    }
+
+    p.mt-2 {
+        font-weight: 500;
+        color: #8d8d8d;
+    }
+
+    bdi {
+        color: #ff0000;
+    }
+
+    h4.mt-3 {
+        font-size: 17px;
+        display: flex;
+    }
+
+    .img-fluid {
+        transition: transform .5s ease;
+
+
+    }
+
+    :hover.img-fluid {
+        transform: scale(1.2);
+
+    }
 </style>
 <script>
     $(document).ready(function () {
@@ -1091,15 +1160,7 @@
                                 <h4>PRICE</h4>
                                 <i class="fa-solid fa-angle-down" style="color: #000000;"></i>
                             </div>
-                            <div class="sida"></div>
-                            <div class="accordion-body">
-                                <span id="sanghi" class=" sadi my-2">Burt Geller</span>
-                                <span id="sanghi" class=" sadi my-2">Candy Carson</span>
-                                <span id="sanghi" class=" sadi my-2">Drew Berrymore</span>
-                                <span id="sanghi" class=" sadi my-2">Karen Perry</span>
-                                <span id="sanghi" class=" sadi my-2">Richard Mann</span>
 
-                            </div>
                         </div>
 
                         <h4
@@ -1151,9 +1212,208 @@
 
 
 
+
+
+
                 </div>
                 <div class="col-12 col-lg-8">
-                    trống trơn</div>
+                    <div class="container">
+                        <div class="csb">
+                            <div class="csv">Showing all 12 results
+
+                            </div>
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseOne">
+                                            Sort by latest
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body-y">
+                                            <p class="csf" href="">Sort by popularity</p>
+                                            <p class="csf" href="">Sort by average rating</p>
+                                            <p class="csf" href="">Sort by latest</p>
+                                            <p class="csf" href="">Sort by price: low to high</p>
+                                            <p class="csf" href="">Sort by price: high to low</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div class="row  gy-5 row-cols-2 row-cols-md-3 row-cols-lg-4 border-0">
+
+                            <div class="col">
+
+                                <div class="product-item bg-white p-3">
+                                    <div class="item-label">
+
+                                    </div>
+                                    <img class="img-fluid"
+                                        src="https://booklovers.ancorathemes.com/wp-content/uploads/2020/05/book11-copyright-400x600.jpg"
+                                        alt="">
+
+                                    <h4 class="mt-3">A Doctor in the House</h4>
+                                    <p class="mt-2">Candy Carson</p>
+                                    <strong class="text-danger">$6.50 – $16.99</strong>
+
+
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="product-item bg-white p-3">
+                                    <div class="item-label">
+
+                                    </div> <img class="img-fluid"
+                                        src="https://booklovers.ancorathemes.com/wp-content/uploads/2020/05/book13-copyright-400x600.jpg"
+                                        alt="">
+
+                                    <h4 class="mt-3">Wildflower </h4>
+                                    <p class="mt-2">Drew Berrymore</p>
+                                    <strong class="text-danger">$10.99 – $20.00</strong>
+
+
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="product-item bg-white p-3">
+                                    <div class="item-label">
+
+                                    </div><img class="img-fluid"
+                                        src="https://booklovers.ancorathemes.com/wp-content/uploads/2020/05/book8-copyright-400x600.jpg"
+                                        class="card-img-top" alt="">
+                                    <h4 class="mt-3">New Galaxy </h4>
+                                    <p class="mt-2">Richard Mann</p>
+                                    <strong class="text-danger">$7.90 – $16.90</strong>
+
+
+
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="product-item bg-white p-3">
+                                    <div class="item-label">
+
+                                    </div><img class="img-fluid"
+                                        src="https://booklovers.ancorathemes.com/wp-content/uploads/2020/05/book5-copyright-400x600.jpg"
+                                        alt="">
+                                    <h4 class="mt-3"> The Long Road to the Deep Silence</h4>
+                                    <p class="mt-2">Richard Mann</p>
+                                    <strong class="text-danger">$12.00 – $22.00 </strong>
+
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="product-item bg-white p-3 ">
+                                    <img class="img-fluid"
+                                        src="https://booklovers.ancorathemes.com/wp-content/uploads/2020/05/book4-copyright-400x600.jpg"
+                                        alt="">
+                                    <h4 class="mt-3">Life in the Gardene</h4>
+                                    <p class="mt-2">Candy Carson</p>
+                                    <strong class="text-danger">$11.99 – $25.00 </strong>
+
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="product-item bg-white p-3"><img class="img-fluid"
+                                        src="https://booklovers.ancorathemes.com/wp-content/uploads/2020/05/book12-copyright-400x600.jpg"
+                                        alt="">
+                                    <h4 class="mt-3">It’s a Really Strange Story</h4>
+                                    <p class="mt-2">Burt Geller</p>
+                                    <strong class="text-danger">$8.00 – $18.00 </strong>
+
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="product-item bg-white p-3"><img class="img-fluid"
+                                        src="https://booklovers.ancorathemes.com/wp-content/uploads/2020/05/book3-copyright-400x600.jpg"
+                                        alt="">
+                                    <h4 class="mt-3">The Son</h4>
+                                    <p class="mt-2">Burt Geller</p>
+                                    <strong class="text-danger">$12.00 – $21.00</strong>
+
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="product-item bg-white p-3"><img class="img-fluid"
+                                        src="https://booklovers.ancorathemes.com/wp-content/uploads/2020/05/book9-copyright-1-400x600.jpg"
+                                        alt="">
+                                    <h4 class="mt-3">Lonely Man in White Hat</h4>
+                                    <p class="mt-2">Burt Geller</p>
+                                    <strong class="text-danger">$10.00 – $19.00 </strong>
+
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="product-item bg-white p-3"><img class="img-fluid"
+                                        src="https://booklovers.ancorathemes.com/wp-content/uploads/2020/05/book1-copyright-400x600.jpg"
+                                        alt="">
+                                    <h4 class="mt-3">Let the Sun Shine</h4>
+                                    <p class="mt-2">Richard Mann</p>
+                                    <strong class="text-danger">$24.00 </strong>
+
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="product-item bg-white p-3"><img class="img-fluid"
+                                        src="https://booklovers.ancorathemes.com/wp-content/uploads/2020/05/book2-copyright-400x600.jpg"
+                                        alt="">
+                                    <h4 class="mt-3">The Forest</h4>
+                                    <p class="mt-2">Karen Perry</p>
+                                    <strong class="text-danger">$8.00 – $15.00 </strong>
+
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="product-item bg-white p-3"><img class="img-fluid"
+                                        src="https://booklovers.ancorathemes.com/wp-content/uploads/2020/05/book6-copyright-400x600.jpg"
+                                        alt="">
+                                    <h4 class="mt-3">A Banquet of Mouse</h4>
+                                    <p class="mt-2">Richard Mann</p>
+                                    <strong class="text-danger">$12.00 – $18.00 </strong>
+
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="product-item bg-white p-3"><img class="img-fluid"
+                                        src="https://booklovers.ancorathemes.com/wp-content/uploads/2020/05/book10-copyright-400x600.jpg"
+                                        alt="">
+                                    <h4 class="mt-3">The Story About Me</h4>
+                                    <p class="mt-2">Drew Berrymore </p>
+                                    <strong class="text-danger">$12.00 $10.00
+                                    </strong>
+
+
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+
+
+
+                    </div>
+
+                    <div>
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                </div>
             </div>
 
             <!--  -->
