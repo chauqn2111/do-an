@@ -394,7 +394,4 @@ button.btn-cart {
     .wapkham {
       animation: doimauchu 6s infinite;
     }
-    @media only screen and (max-width: 769px)
-       button:not(:disabled) {
-        
-       }
+    
