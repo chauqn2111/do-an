@@ -1,12 +1,7 @@
 
 
 
-header {
-  position: fixed;
-  z-index: 111;
-  width: 100%;
-  top: 0;
-}
+
 .carousel-inner img {
     height: 600px;
    
