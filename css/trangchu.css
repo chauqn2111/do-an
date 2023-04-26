@@ -394,4 +394,8 @@ button.btn-cart {
     .wapkham {
       animation: doimauchu 6s infinite;
     }
+    button.btn-info a {
+      text-decoration: none;
+      color: black;
+  }
     

@@ -1,0 +1,58 @@
+
+
+
+/* css đánh giá sao */
+
+
+
+   .rating input[type="radio"] {
+    display: none;
+  }
+  
+  .rating label {
+    color: grey;
+    font-size: 2em;
+    padding: 0 0.1em;
+    cursor: pointer;
+  }
+  
+  .rating label:hover,
+  .rating input[type="radio"]:checked ~ label {
+    color: orange;
+  }
+  
+  .rating label:hover ~ label,
+  .rating input[type="radio"]:checked ~ label ~ label {
+    color: grey;
+  }
+  .collapse-horizontal .card {
+    flex-shrink: 0;
+    width: 300px !important;
+  }
+
+.fa-star {
+    width: auto !important;
+}
+
+
+
+
+.btn-info,
+.btn-buy,
+.btn-cart {
+  display: block;
+  margin-bottom: 5px;
+  padding: 10px 10px;
+  /* background-color: #007bff; */
+  color: #121111;
+  border:#8a5ae2 solid 0.6px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+i.fa-brands.fa-shopify.fa-xl {
+    float: none;
+    position: absolute;
+    bottom: 77px;
+    left: 61px;
+}
