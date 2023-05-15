@@ -6,879 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>trang-groud 3 kích</title>
-    <link rel="stylesheet" href="css/trangchu.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
+        rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css ">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="shortcut icon"
         href="https://scontent.fdad7-1.fna.fbcdn.net/v/t39.30808-6/337100965_3497961447157482_3915042219012048561_n.jpg?stp=dst-jpg_p843x403&_nc_cat=109&ccb=1-7&_nc_sid=5cd70e&_nc_ohc=GqPd9OqzQGwAX-GYRkw&_nc_ht=scontent.fdad7-1.fna&oh=00_AfAZk-v5L-CrKcSJvZGibtMWgua-aiMJW6asjQTnvwnTpw&oe=643901BD"
         type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<style>
-    * {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-    }
 
-    /* thanh đièu hướng trên */
-
-
-    .input-group {
-        position: relative;
-        top: 4px;
-    }
-
-    li.menu-item {
-        position: relative;
-
-        list-style: none;
-
-        border-style: solid;
-        border-width: 0px 1px 0px 0px;
-        border-color: #dedede;
-
-        padding: 0px 20px 0px 0px;
-
-    }
-
-    .justify-content-between {
-        height: 50px;
-    }
-
-    .text-end {
-        display: flex;
-        justify-content: end;
-        align-items: center;
-    }
-
-    .input-group:not(.has-validation)>.dropdown-toggle:nth-last-child(n+3),
-    .input-group:not(.has-validation)>.form-floating:not(:last-child)>.form-control,
-    .input-group:not(.has-validation)>.form-floating:not(:last-child)>.form-select,
-    .input-group:not(.has-validation)>:not(:last-child):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating) {
-
-        font-size: 14px;
-
-    }
-
-    .fa-brands,
-    .fab {
-        display: block;
-        font-size: 15px;
-        border: none;
-    }
-
-    .fa-brands,
-    .fab {
-        float: left;
-    }
-
-    .fa,
-    .fa-brands,
-    .fa-classic,
-    .fa-regular,
-    .fa-sharp,
-    .fab,
-    .far,
-    .fas {
-        position: relative;
-        background-size: 100%;
-        width: 45px;
-        height: 45px;
-        line-height: 45px;
-        font-size: 15px;
-        text-align: center;
-    }
-
-    .mono {
-        margin-bottom: 18px;
-    }
-
-    .mono {
-        text-decoration: none;
-        color: #000000;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-
-    .mono {
-        margin: 0px 0px 0px 0px;
-        padding: 0px 0px 0px 24px;
-        border-style: solid;
-        border-width: 0px 0px 0px 1px;
-        border-color: #DEDEDE;
-    }
-
-    .sc_layouts_2 {
-        font-size: 14px;
-        font-weight: 500;
-        color: rgb(255, 0, 0);
-    }
-
-    .sc_layouts_2:hover {
-        color: #000000;
-    }
-
-    .sc_layouts_1 {
-        font-size: 8px;
-        font-weight: 100;
-        color: rgb(138, 138, 138);
-        animation: doimauchu 3s infinite;
-
-    }
-
-    .fa-phone:before {
-        font-size: 11px;
-        color: rgb(138, 138, 138);
-        animation: doimauchu 3s infinite;
-    }
-
-
-
-
-    :hover.fa-facebook-f:before {
-        color: #006aff;
-    }
-
-    :hover.fa-twitter:before {
-        color: #006aff;
-    }
-
-    :hover.fa-instagram:before {
-        color: #ff00b3;
-    }
-
-    .menu-item {
-        font-size: 14px;
-        font-weight: 600;
-    }
-
-    /* thanh điều hướng dưới */
-    .momo {
-        margin-right: 45px;
-        display: flex;
-    }
-
-    .fa-bag-shopping:before,
-    .fa-shopping-bag:before {
-        margin: 0px 4px 0px -29px;
-        padding: 0px 26px 1px 43px;
-        border: solid;
-        border-width: 0px 0px 0px 1px;
-        border-color: #DEDEDE;
-        cursor: pointer;
-    }
-
-    :hover.fa-bag-shopping:before,
-    .fa-shopping-bag:before {
-        color: #f39c12;
-    }
-
-    .shadow-sm {
-        padding: 6px 0px 6px 0px;
-    }
-
-    .monu {
-        display: none;
-        position: absolute;
-        list-style: none;
-        margin-left: -70px;
-        background-color: #2a2a2a;
-        padding: 20px 40px 20px 40px;
-        font-size: 16px;
-        font-weight: 400;
-    }
-
-    :hover.mona .monu {
-        display: inline-block;
-    }
-
-    .mona a {
-        display: flex;
-        text-decoration: none;
-        color: #a8a8a8
-    }
-
-    :hover.nav-link.active {
-        text-decoration: underline;
-        color: #ff0000;
-    }
-
-    dl,
-    ol,
-    ul {
-        margin-top: 0;
-        margin-bottom: 0rem;
-    }
-
-    ol,
-    ul {
-        padding-left: 0rem;
-    }
-
-    .my-2 {
-        list-style: none;
-    }
-
-    .monu {
-        display: none;
-        position: absolute;
-        list-style: none;
-        margin-left: -70px;
-        background-color: #2a2a2a;
-        padding: 20px 40px 20px 40px;
-        font-size: 16px;
-        font-weight: 400;
-        z-index: 9999999;
-    }
-
-    :hover.mona .monu {
-        display: inline-block;
-    }
-
-    .mona a {
-        text-decoration: none;
-        color: #e0e0e0
-    }
-
-    /* foooter */
-    @keyframes doimauchu {
-        0% {
-            color: #f1c40f;
-        }
-
-        20% {
-            color: #e74c3c;
-        }
-
-        50% {
-            color: #000000;
-        }
-
-        70% {
-            color: #2ecc71;
-        }
-
-        100% {
-            color: #9742a0;
-        }
-    }
-
-    .bth2 {
-        font-size: 19px;
-        font-weight: bold;
-        text-decoration: none;
-        color: #ff0000;
-        animation: doimauchu 3s infinite;
-    }
-
-
-
-    h5 {
-
-        border-bottom: 1px solid rgb(172, 172, 172);
-        display: inline-block;
-        width: 44%;
-        height: 60px;
-        animation: doimauchu 3s infinite;
-    }
-
-    .mo14 a {
-        text-decoration: none;
-        color: #797979;
-        position: relative;
-    }
-
-    .underline_anim.underline_do_hover {
-        text-decoration: none;
-        border-bottom: 1px solid #797979;
-    }
-
-    .card.border-0.my-3 {
-        border-bottom: 1px solid #797979;
-    }
-
-    /*  taplet */
-    @media only screen and (max-width: 769px) {
-
-    .fa-bag-shopping:before, 
-    .fa-shopping-bag:before {
-        position: absolute;
-        right: 70px;
-        bottom: 82px;
-}
-
-        img,
-        svg {
-            height: auto;
-            width: 133px;
-            top: 10px;
-        }
-
-        .bg-body-tertiary {
-            height: 60px;
-        }
-
-        .collapse:not(.show) {
-            display: block;
-        }
-
-     i#sangf {
-        left: 611px;
-        bottom: 50px;
-    }
-                    button.navbar-toggler {
-                display: none;
-            }
-                    .navbar-nav .nav-link.active,
-        .navbar-nav .nav-link.show {
-            width: 100%;
-            margin-left: 25px;
-        }
-
-        .bg-white {
-            height: 105px;
-        }
-
-        .input-group {
-            position: relative;
-            top: 0px;
-        }
-
-        .search {
-            display: block;
-            font-size: 100%;
-            max-width: 100%;
-        }
-
-
-
-
-    }
-
-    /* mobile */
-   @media only screen and (max-width: 480px) {
-        .search-input.show {
-            width: 345px;
-        }
-        .bg-body-tertiary {
-            height: 67px;
-        }
-        .fa-phone:before {
-            content: "\f095";
-            left: 0;
-        }
-        span.fa-brands.fa-facebook-f {
-            top: 23px;
-            right: 144px;
-        }
-            span.fa-brands.fa-twitter {
-        top: 25px;
-        right: 136px;
-        }
-        span.fa-brands.fa-instagram {
-        top: 25px;
-        right: 135px;
-        }
-        .sc_layouts_item.elementor-element.elementor-element-c5c8c1b.sc_fly_static.elementor-widget.elementor-widget-trx_sc_layouts_iconed_text.trx_addons_parallax_layers_inited.trx_addons_parallax_blocks_inited {
-            top: 13px;
-            position: absolute;
-            right: 1px;
-        }
-        .col-3 {
-        flex: 0 0 auto;
-        width: 33%;
-        }
-        .sc_layouts_item.elementor-element.elementor-element-2b15188.sc_fly_static.elementor-widget.elementor-widget-trx_sc_layouts_login.trx_addons_parallax_layers_inited.trx_addons_parallax_blocks_inited {
-            top: 15px;
-            left: 140px;
-            position: absolute;
-        }
-                button.navbar-toggler {
-            right: 160px;
-            position: absolute;
-        }
-        input.search_field.fill_inited {
-
-            width: 265px;
-            height: 50px;
-
-        }
-        button.navbar-toggler {
-        right: 160px;
-        position: absolute;
-            }
-
-        button#icon-search {
-            position: relative;
-            top: 181px;
-        }
-
-        ::before {
-
-            /* left: 260px; */
-            position: relative;
-        }
-        .fa-phone:before {
-            content: "\f095";
-            left: 3px;
-        }
-        
-        .justify-content-between {
-            display: flex;
-        }
-
-        img,
-        svg {
-            height: auto;
-            width: 145px;
-        }
-
-        [type=button]:not(:disabled),
-        [type=reset]:not(:disabled),
-        [type=submit]:not(:disabled),
-        button:not(:disabled) {
-            display: inline-block;
-            border: 0px;
-        }
-
-        .fa-bag-shopping:before,
-        .fa-shopping-bag:before {
-            border: none;
-            position: relative;
-            left: 313px;
-            bottom: 84px;
-            padding: 5px;
-            position: absolute;
-            display: inline-flex;
-
-        }
-
-        .collapse:not(.show) {
-            display: none;
-        }
-
-        .fa-magnifying-glass:before,
-        .fa-search:before {
-            position: relative;
-            font-size: 19px;
-            top: 13px;
-            left: 10px;
-        }
-
-        
-     .fa-search:before {
-        position: absolute;
-        top: -2px;
-        left: -267px;
-    }
-        .search-input {
-            display: none;
-            position: absolute;
-            position: fixed;
-            z-index: 10000;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            width: 0%;
-            height: 0%;
-
-        }
-
-
-    }
-    @media only screen and (max-width: 376px){
-        i#sangf {
-        left: -8px;
-        bottom: 41px;
-            }
-            .bg-body-tertiary {
-            height: 80px;
-            }    
-            button.navbar-toggler {
-            right: 100px;
-            position: absolute;
-        }
-        .sc_layouts_iconed_text {
-    top: 37px;
-    /* margin-top: 36px; */
-    margin-right: 8px;
-    position: absolute;
-    right: 0px;
-    width: 200px;
-}
-        
-        span.fa-brands.fa-instagram {
-        top: 23px;
-        right: 151px;
-        }
-        span.fa-brands.fa-twitter {
-        top: 23px;
-        right: 140px;
-        }
-        .sc_layouts_item.elementor-element.elementor-element-2b15188.sc_fly_static.elementor-widget.elementor-widget-trx_sc_layouts_login.trx_addons_parallax_layers_inited.trx_addons_parallax_blocks_inited {
-        top: 15px;
-        left: 172px;
-        position: absolute;
-        }
-        span.fa-brands.fa-facebook-f {
-        top: 21px;
-        right: 131px;
-        }
-        .fa-bag-shopping:before, .fa-shopping-bag:before {
-        border: none;
-        position: relative;
-        left: 350px;
-        bottom: 89px;
-        padding: 5px;
-        position: absolute;
-        display: inline-flex;
-        }   
-        .bg-white {
-            height: 105px;
-            width: 375px;
-        }
-        
-     .fa-search:before {
-        position: absolute;
-        top: -16px;
-        left: 264px;
-        }
-    }
-    @media only screen and (max-width: 322px){
-.fa-bag-shopping:before, .fa-shopping-bag:before {
-    border: none;
-    position: relative;
-    left: 261px;
-    bottom: 83px;
-    padding: 5px;
-    position: absolute;
-    display: inline-flex;
-}
-.fa-search:before {
-    position: relative;
-    top: -15px;
-    left: 257px;
-}
-
-button.navbar-toggler {
-    right: 74px;
-    position: absolute;
-}
-.socials_wrap.sc_item_content {
-    right: 6px;
-    position: absolute;
-    top: 26px;
-}
-    p.mony.my-2 {
-        line-height: 17px;
-    }
-    
-      
-        .fa-search:before {
-    position: absolute;
-    top: -13px;
-    left: 267px;
-}
-.fa-bag-shopping:before {
-    border: none;
-    position: relative;
-    left: 261px;
-    bottom: 86px;
-    padding: 5px;
-    position: absolute;
-    display: inline-flex;
-}
-        .bg-white {
-        height: 75px;
-        width: 320px;
-    }
-    }
-
-    /* tìm kiếm */
-
-
-    :hover.fa-search:before {
-        color: #ff0000;
-    }
-
-    .fa-search:before {
-        font-size: 19px;
-        color: #5c5c5c;
-    }
-
-
-
-    .search-button {
-        border: none;
-        background-color: transparent;
-        cursor: pointer;
-    }
-
-    .search-input {
-        display: none;
-        position: absolute;
-        position: fixed;
-        z-index: 10000;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(255, 255, 255, .9);
-    }
-
-    .search-input form {
-        position: relative;
-    }
-
-    .search-input form .search_field {
-        position: relative;
-        font-size: 50px;
-        border: none;
-        border-bottom: 1px solid #a8a8a8;
-        top: 200px;
-        padding: 0px 50px;
-    }
-
-    .search-input form .search_submit {
-        position: absolute;
-        top: 0;
-        right: 0;
-        border: none;
-        background-color: transparent;
-        cursor: pointer;
-    }
-
-    .search-input form .search_close {
-        position: absolute;
-        top: 0;
-        right: 0;
-        margin: 0 8px;
-        border: none;
-        background-color: transparent;
-        cursor: pointer;
-        visibility: hidden;
-    }
-
-    .search-input form:hover .search_close {
-        visibility: visible;
-    }
-
-    .search-input.show {
-        display: block;
-    }
-
-    button#icon-search {
-        border: none;
-        background-color: rgb(255, 255, 255);
-    }
-
-    button#bth1 {
-        border: none;
-    }
-
-    #icon-search {
-        position: relative;
-        font-size: 30px;
-        top: 197px;
-        right: 40px;
-
-    }
-
-    .fa-close:before,
-    .fa-multiply:before,
-    .fa-remove:before,
-    .fa-times:before,
-    .fa-xmark:before {
-        position: absolute;
-        bottom: 10px;
-        font-size: 40px;
-        right: 375px;
-        transition: all ease 1s;
-
-
-    }
-
-    :hover.fa-xmark:before {
-        transform: rotate(180deg);
-
-    }
-    .btn-close.chau-chau {
-      transition: all ease 1s;
-    }
-    :hover.btn-close.chau-chau {
-      transform: rotate(180deg);
-      
-    }
-    .fa-xmark:before {
-        display: block;
-    }
-
-    .sc_layouts_cart_items {
-        display: none;
-    }
-
-    #htn {
-        display: none;
-    }
-
-
-
-    .sc_layouts_cart_items_short {
-        display: none;
-    }
-
-    .sc_layouts_item_details_line2.sc_layouts_cart_totals {
-        display: none;
-    }
-
-    /* phần đăng nhập */
-    .chau-chau {
-        position: absolute;
-        top: 10px;
-        right: 13px;
-        padding: 12px;
-        margin: 5px;
-    }
-
-    .chau-loi {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-    }
-
-    .chau-sang {
-        border: none;
-    }
-
-    .modal-header {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    #exampleModalLabel {
-        color: rgb(81, 58, 58);
-    }
-
-    .chau-12-12 {
-        display: flex;
-    }
-
-    .col-form-label {
-        min-width: 80px;
-        display: inline-flex;
-    }
-
-    .form-control {
-        flex: 1;
-    }
-
-    .chontp {
-        text-align: center;
-
-    }
-
-    #sex {
-        margin: 0 13px;
-    }
-
-    .chau-huan {
-        display: flex;
-        gap: 15px;
-    }
-
-    .modal-container {
-
-        text-align: center;
-    }
-
-    .modal {
-        --bs-modal-width: 800px
-    }
-
-    .modal-dialog {
-        margin-top: 65px;
-    }
-
-    .modal-footer {
-        justify-content: space-between;
-    }
-
-    .chau-12 {
-        text-align: right;
-    }
-
-    .form-action {
-        justify-content: center;
-        display: flex;
-    }
-
-    .laviem {
-        background-color: transparent;
-        border: solid #6a6767eb 0.7px;
-        padding: 5px 30px;
-        text-transform: uppercase;
-        width: 80%;
-
-    }
-
-    .laviem:hover {
-        border: 0;
-        opacity: 0.6;
-        font-size: 20px;
-    }
-
-    :hover.btn-close.chau-chau {
-        transform: rotate(180deg);
-    }
-
-    .laviemm {
-        width: 30%;
-        border: solid rgb(165, 152, 127) 0.8;
-    }
-
-    .modal.fade {
-        transform: translateY(-100%);
-        transition: transform 0.6s ease;
-    }
-
-    .modal.fade.show {
-        transform: translateY(0);
-    }
-
-    .elementor-widget-container {
-        display: flex;
-        padding: 0px 0px;
-
-    }
-
-    .btn.chau-sang {
-        border: none;
-        color: #777777;
-        padding: 1px 1px;
-        font-size: 14px;
-        font-weight: 500;
-
-    }
-
-    .btn.sangpp {
-        color: rgb(255, 0, 0);
-        border: none;
-        padding: 1px 3px;
-        font-size: 14px;
-        font-weight: 500;
-    }
-</style>
 
 <body>
 
     <header>
-        <div class="header-top bg-body-tertiary" style="width: 100%;">
-            <div class="container">
+        <div class="header-top bg-body-tertiary">
+            <div class=" container">
+
                 <div class="row justify-content-between">
                     <div class="col-3 search-bar">
                         <div class="input-group">
@@ -960,8 +107,7 @@ button.navbar-toggler {
                                                     <div class="modal-footer">
                                                         <button type="button" class="btn btn-secondary"
                                                             data-bs-dismiss="modal">Close</button>
-                                                        <button type="submit" class="btn btn-primary chau-12">Save Imformation
-                                                            </button>
+                                                        
                                                     </div>
                                                 </div>
                                             </div>
@@ -994,7 +140,7 @@ button.navbar-toggler {
                                                         required></input>
                                                 </div>
                                                 <div class="form-action">
-                                                    <button class="laviem" type="submit">Enter</button>
+                                                    <button class="lavien" type="submit">Enter</button>
                                                 </div>
                                              </form>
                                                 <div class="modal-footer">
@@ -1033,7 +179,7 @@ button.navbar-toggler {
                                                             required></input>
                                                     </div>
                                                     <div class="form-action">
-                                                        <button class="laviem" type="submit">Enter</button>
+                                                        <button class="lavien" type="submit">Enter</button>
                                                     </div>
                                                  </form>
                                                 <div class="modal-footer">
@@ -1057,16 +203,16 @@ button.navbar-toggler {
                                         <div class="socials_wrap sc_item_content"><a target="_blank"
                                                 href="https://www.facebook.com/profile.php?id=100041604100887"
                                                 class="social_item social_item_style_icons sc_icon_type_icons social_item_type_icons"
-                                                rel="nofollow"><span class="fa-brands fa-facebook-f"
+                                                rel="nofollow"><span class="fa-brands fa-facebook-f fa-fb-tw-is"
                                                     style="color: #000000;"><span
                                                         class="icon-facebook-1"></span></span></a>
                                             <a target="_blank" href="https://twitter.com/themes_ancora"
                                                 class="social_item social_item_style_icons sc_icon_type_icons social_item_type_icons"
-                                                rel="nofollow"><span class="fa-brands fa-twitter"
+                                                rel="nofollow"><span class="fa-brands fa-twitter fa-fb-tw-is"
                                                     style="color: #000000;"></span></a>
                                             <a target="_blank" href="https://www.instagram.com/ancora_themes/"
                                                 class="social_item social_item_style_icons sc_icon_type_icons social_item_type_icons"
-                                                rel="nofollow"><span class="fa-brands fa-instagram"
+                                                rel="nofollow"><span class="fa-brands fa-instagram fa-fb-tw-is"
                                                     style="color: #000000;"><span
                                                         class="icon-instagram"></span></span></a>
                                         </div>
@@ -1100,15 +246,15 @@ button.navbar-toggler {
             </div>
         </div>
 
-        <div class="header-bottom bg-white shadow-sm mb-2">
+        <div class="header-bottom bg-white shadow-sm mb-3">
             <div class="container text-center row-cols-1">
                 <nav class="navbar navbar-expand-lg">
                     <div class="container">
                         <a class="navbar-brand justify-content-lg-start"
-                            href="http://127.0.0.1:5500/%C4%91%E1%BB%93%20%C3%A1n%201/index.html"><img
+                            href="#"><img
                                 src="//booklovers.ancorathemes.com/wp-content/uploads/2021/02/logo-1.png"
                                 alt="Booklovers" width="194" height="51"></a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        <button id="gogo" class="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
                             aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
@@ -1138,24 +284,24 @@ button.navbar-toggler {
                                     </ul>
                                     <ul class="mona">
                                         <a class="nav-link active me-2" href="#">
-                                            PAGES
+                                            STORE
                                         </a>
                                         <ul class="monu">
                                             <li class="menu-item-89 my-2">
-                                                <a href="" aria-current="page"><span>Typography
+                                                <a href="store.html" aria-current="page"><span>Shop
+                                                        List
                                                     </span></a>
                                             </li>
                                             <li class="menu-item-90 my-2">
-                                                <a href="" aria-current="page"><span>Shortcodes</span></a>
+                                                <a href="checkout.html" aria-current="page"><span>checkouts</span></a>
                                             </li>
                                             <li class="menu-item-91 my-2">
-                                                <a href="" aria-current="page"><span>Newsletter
-                                                        Popup</span></a>
+                                                <a href="stores.html" aria-current="page"><span>Cart</span></a>
                                             </li>
-                                            <li class="menu-item-92 my-2"><a href="" aria-current="page"><span>Privacy
-                                                        Policy</span></a></li>
-                                            <li class="menu-item-93 my-2"><a href="" aria-current="page"><span>Service
-                                                        Plus</span></a></li>
+                                            <li class="menu-item-92 my-2"><a href="product-information.html" aria-current="page"><span>Single
+                                                        Product</span></a></li>
+                                            <li class="menu-item-93 my-2"><a href="" aria-current="page"><span>Wishlist
+                                                        Page</span></a></li>
                                         </ul>
                                     </ul>
                                     <ul class="mona">
@@ -1163,7 +309,7 @@ button.navbar-toggler {
                                             OUR EVENTS</a>
                                         <ul class="monu">
                                             <li class="menu-item-89 my-2">
-                                                <a href="" aria-current="page"><span>Events
+                                                <a href="out events.html" aria-current="page"><span>Events
                                                         List
                                                     </span></a>
                                             </li>
@@ -1216,29 +362,9 @@ button.navbar-toggler {
                                         </ul>
                                     </ul>
                                     <ul class="mona">
-                                        <a class="nav-link active me-2     " href="#">
-                                            STORE</a>
-                                        <ul class="monu">
-                                            <li class="menu-item-89 my-2">
-                                                <a href="" aria-current="page"><span>Shop
-                                                        List
-                                                    </span></a>
-                                            </li>
-                                            <li class="menu-item-90 my-2">
-                                                <a href="" aria-current="page"><span>Single
-                                                        Product</span></a>
-                                            </li>
-                                            <li class="menu-item-91 my-2">
-                                                <a href="" aria-current="page"><span>Cart</span></a>
-                                            </li>
-                                            <li class="menu-item-91 my-2">
-                                                <a href="" aria-current="page"><span>Checkouts</span></a>
-                                            </li>
-                                            <li class="menu-item-91 my-2">
-                                                <a href="" aria-current="page"><span>Wishlist
-                                                        Page</span></a>
-                                            </li>
-                                        </ul>
+                                        <a class="nav-link active me-2     " href="contact.html">
+                                            CONTENT</a>
+
                                     </ul>
 
                                 </div>
@@ -1309,8 +435,10 @@ button.navbar-toggler {
         </div>
         </div>
     </header>
+
+
     <main>
-        <div id="carouselExampleDark" class="carousel carousel-dark slide my-5" data-interval="1000">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-interval="1000">
             <div class="carousel-indicators">
               <button
                 type="button"
@@ -1413,49 +541,56 @@ button.navbar-toggler {
                   <li class="">
               <a
                 href="#"
-                class="sc_item_filters_all chau-vip"
+                class="sc_item_filters_all"
                 data-tab="all"
-                data-page="1">
-                
-                    Bản Phát Hành Mới Nhất
-                  
-                </a
+                data-page="1"
+                ><font style="vertical-align: inherit"
+                  ><font style="vertical-align: inherit"
+                    >Bản Phát Hành Mới Nhất</font
+                  ></font
+                ></a
               >
                   </li>
                 </div>
                 <div class="col">
                   <li class="">
-                    <a
-                      href="#blogger_filters_190_content"
-                      data-tab="190"
-                      data-page="1"
-                      class="chau-vip">
-                      
-                          Giải Người Chiến Thắng
-                      
-                      </a>
+              <a
+                href="#blogger_filters_190_content"
+                data-tab="190"
+                data-page="1"
+                class=""
+                ><font style="vertical-align: inherit"
+                  ><font style="vertical-align: inherit"
+                    >Giải Người Chiến Thắng</font
+                  ></font
+                ></a
+              >
                   </li>
                 </div>
                 <div class="col">
                   <li class="">
-                    <a
-                      href="#blogger_filters_189_content"
-                      data-tab="189"
-                      data-page="1"
-                      class="chau-vip">
-                     Bán Chạy Nhất Tuần
-                    </a>
+              <a
+                href="#blogger_filters_189_content"
+                data-tab="189"
+                data-page="1"
+                class=""
+                ><font style="vertical-align: inherit"
+                  ><font style="vertical-align: inherit">Bán Chạy Nhất Tuần</font></font
+                ></a
+              >
                   </li>
                 </div>
                 <div class="col">
                   <li class="sc_item_filters_tabs_active">
-                    <a
-                      href="#blogger_filters_188_content"
-                      data-tab="188"
-                      data-page="1"
-                      class="active chau-vip"
-                      ><font style="vertical-align: inherit"
-                        ><font style="vertical-align: inherit">Sách Mới Sắp Ra Mắt</font></font></a>
+              <a
+                href="#blogger_filters_188_content"
+                data-tab="188"
+                data-page="1"
+                class="active"
+                ><font style="vertical-align: inherit"
+                  ><font style="vertical-align: inherit">Sách Mới Sắp Ra Mắt</font></font
+                ></a
+              >
                   </li>
                 </div>
               
@@ -1467,11 +602,11 @@ button.navbar-toggler {
                 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
                   <div class="col">
                     <div class="slide">
-                      <div class="card image-container">
-                        <img src="https://bookish.vn/wp-content/uploads/2019/09/doi-song-bi-an-cua-cay.jpg" alt="Book 1">
+                      <div class="card">
+                        <img src="data:image/jpeg;base64,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" alt="Book 1">
                         <h3>Đời Sống Bí Ẩn Của Cây</h3>
                         <p class="price">$9.99</p>
-                        <button class="btn-info"><a href="product-information.html">Xem Thêm Thông Tin</a></button>
+                        <button class="btn-info">Xem thêm thông tin</button>
                         <button class="btn-buy"><i class="fa-brands fa-shopify fa-xl"></i> Mua ngay</button>
                         <button class="btn-cart"><i class="fa fa-shopping-cart"></i>Thêm vào giỏ hàng</button>
                       </div>
@@ -1480,7 +615,7 @@ button.navbar-toggler {
                   <div class="col">
                     <div class="slide">
                       <div class="card">
-                        <img src="https://bookish.vn/wp-content/uploads/2019/09/doi-khong-plastic.jpg" alt="Book 2">
+                        <img src="https://booklovers.ancorathemes.com/wp-content/uploads/2020/05/book11-copyright-400x600.jpg" alt="Book 2">
                         <h3>Đời Không Plastic</h3>
                         <p class="price">$19.99</p>
                         <button class="btn-info">Xem thêm thông tin</button>
@@ -1492,7 +627,7 @@ button.navbar-toggler {
                   <div class="col">
                     <div class="slide">
                       <div class="card">
-                        <img style="max-height: 367px;" src="https://bookish.vn/wp-content/uploads/2020/07/Nien_lich_mien_gio_cat-2-1-600x910.jpg" alt="Book 2">
+                        <img style="max-height: 367px;" src="https://booklovers.ancorathemes.com/wp-content/uploads/2020/05/book13-copyright-400x600.jpg" alt="Book 2">
                         <h3>Niên Lịch Miền Gió Cát</h3>
                         <p class="price">$19.99</p>
                         <button class="btn-info">Xem thêm thông tin</button>
@@ -1504,7 +639,7 @@ button.navbar-toggler {
                   <div class="col">
                     <div class="slide">
                       <div class="card">
-                        <img src="https://bookish.vn/wp-content/uploads/2019/09/mua-xuan-vang-lang.jpg" alt="Book 2">
+                        <img src="https://booklovers.ancorathemes.com/wp-content/uploads/2020/05/book8-copyright-400x600.jpg" alt="Book 2">
                         <h3>Mùa Xuân Vắng Lặng</h3>
                         <p class="price">$19.99</p>
                         <button class="btn-info">Xem thêm thông tin</button>
@@ -1516,7 +651,7 @@ button.navbar-toggler {
                   <div class="col">
                     <div class="slide">
                       <div class="card">
-                        <img src="https://bookish.vn/wp-content/uploads/2019/09/shinrin-yoku-nghe-thuat-tam-rung-cua-nguoi-nhat.jpg" alt="Book 2">
+                        <img src="https://booklovers.ancorathemes.com/wp-content/uploads/2020/05/book5-copyright-400x600.jpg" alt="Book 2">
                         <h3>Shinrin-yoku</h3>
                         <p class="price">$19.99</p>
                         <button class="btn-info">Xem thêm thông tin</button>
@@ -1528,7 +663,7 @@ button.navbar-toggler {
                   <div class="col">
                     <div class="slide">
                       <div class="card">
-                        <img style="max-height: 367px;"  src="https://bookish.vn/wp-content/uploads/2021/01/gianh-lai-khong-khi-sach-_114274_1-676x1024.jpg" alt="Book 2" >
+                        <img style="max-height: 367px;"  src="https://booklovers.ancorathemes.com/wp-content/uploads/2020/05/book4-copyright-400x600.jpg" alt="Book 2" >
                         <h3>Giành Lại Không Khí Sạch</h3>
                         <p class="price">$19.99</p>
                         <button class="btn-info">Xem thêm thông tin</button>
@@ -1541,7 +676,7 @@ button.navbar-toggler {
                   <div class="col">
                     <div class="slide">
                         <div class="card">
-                        <img src="https://bookish.vn/wp-content/uploads/2019/09/dot-tuyet-chung-thu-sau.jpg" alt="Book 2">
+                        <img src="https://booklovers.ancorathemes.com/wp-content/uploads/2020/05/book2-copyright-400x600.jpg" alt="Book 2">
                         <h3>Đợt Tuyệt Chủng Thứ 6</h3>
                         <p class="price">$19.99</p>
                         <button class="btn-info">Xem thêm thông tin</button>
@@ -1553,7 +688,7 @@ button.navbar-toggler {
                   <div class="col">
                     <div class="slide">
                       <div class="card">
-                        <img src="https://bookish.vn/wp-content/uploads/2019/09/nha-khong-rac.jpg" alt="Book 2">
+                        <img src="https://booklovers.ancorathemes.com/wp-content/uploads/2020/05/book6-copyright-400x600.jpg" alt="Book 2">
                         <h3>Nhà Không Rác</h3>
                         <p class="price">$19.99</p>
                         <button class="btn-info">Xem thêm thông tin</button>
@@ -1566,7 +701,7 @@ button.navbar-toggler {
                   <div class="col">
                     <div class="slide">
                         <div class="card">
-                        <img src="https://bookish.vn/wp-content/uploads/2023/03/khoi-troi-long-lay-tb-2022.jpg" alt="Book 2">
+                        <img src="https://booklovers.ancorathemes.com/wp-content/uploads/2020/05/book10-copyright-400x600.jpg" alt="Book 2">
                         <h3>Khói Trời Lộng Lẫy</h3>
                         <p class="price">$19.99</p>
                         <button class="btn-info">Xem thêm thông tin</button>
@@ -1578,7 +713,7 @@ button.navbar-toggler {
                   <div class="col">
                     <div class="slide">
                       <div class="card">
-                        <img src="https://bookish.vn/wp-content/uploads/2023/03/nhung-gi-ban-biet-ve-minh-deu-sai.jpg" alt="Book 2">
+                        <img src="https://booklovers.ancorathemes.com/wp-content/uploads/2020/05/book12-copyright-400x600.jpg" alt="Book 2">
                         <h3 style="font-size: 15px;">Những Gì Bạn Biết Về Mình Đều Sai</h3>
                         <p class="price">$19.99</p>
                         <button class="btn-info">Xem thêm thông tin</button>
@@ -1590,7 +725,7 @@ button.navbar-toggler {
                   <div class="col">
                     <div class="slide">
                       <div class="card">
-                        <img src="https://bookish.vn/wp-content/uploads/2023/03/osho-chinh-truc.jpg" alt="Book 2">
+                        <img src="https://booklovers.ancorathemes.com/wp-content/uploads/2020/05/book1-copyright-400x600.jpg" alt="Book 2">
                         <h3>Osho Chính Trực</h3>
                         <p class="price">$19.99</p>
                         <button class="btn-info">Xem thêm thông tin</button>
@@ -1602,7 +737,7 @@ button.navbar-toggler {
                   <div class="col">
                     <div class="slide">
                       <div class="card">
-                        <img src="https://bookish.vn/wp-content/uploads/2023/03/Mockup_Me_hoac-1.jpg" alt="Book 2">
+                        <img src="https://booklovers.ancorathemes.com/wp-content/uploads/2020/05/book10-copyright-400x600.jpg" alt="Book 2">
                         <h3>Mê Hoặc</h3>
                         <p class="price">$19.99</p>
                         <button class="btn-info">Xem thêm thông tin</button>
@@ -1614,8 +749,8 @@ button.navbar-toggler {
                   <div class="col">
                     <div class="slide">
                       <div class="card">
-                        <img src="https://bookish.vn/wp-content/uploads/2023/03/canh-dong-bat-tan-co-minh-hoa.jpg" alt="Book 2">
-                        <h3>Cánh Đồng Bất Tận</h3>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmT1FgIHFWjRnPpriR8gMjdgGCI4Ds7XrHxEC2ZI4E6qYztj_bxsa3jwWgRYY1Fz9Yq6A&usqp=CAU" alt="Book 2">
+                        <h3>Đại Cương Nhà Nước</h3>
                         <p class="price">$19.99</p>
                         <button class="btn-info">Xem thêm thông tin</button>
                         <button class="btn-buy"><i class="fa-brands fa-shopify fa-xl"></i> Mua ngay</button>
@@ -1626,7 +761,7 @@ button.navbar-toggler {
                   <div class="col">
                     <div class="slide">
                         <div class="card">
-                        <img src="https://bookish.vn/wp-content/uploads/2023/03/ban-that-su-la-ai.jpg" alt="Book 2">
+                        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBUVFRgVFRUZGBgaGBwYGhgaGhocGRoaHBgaHCMaGhkcIS4lHR4rHxwcJjgnKy8xNTU1HiQ7QDs0Py40NTEBDAwMEA8QHxISHjQlJCs0NDQ0NDQ0NDQ0NDQ0NDExNDQ0NDQ0NDQ0NDQ0PTQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NP/AABEIARAAugMBIgACEQEDEQH/xAAcAAACAwEBAQEAAAAAAAAAAAAAAgEDBAUHBgj/xABEEAACAQIEAwUFBgMFBgcAAAABAhEAIQMSMUEEUWEFcYGR8BMiobHhBjJCwdHxFCRSByMzYpIVY3KCotIWNFNzk7LC/8QAGQEBAQEBAQEAAAAAAAAAAAAAAAECAwQF/8QAKhEBAQACAQMCBQMFAAAAAAAAAAECERIhMUEDUQQTFKGxYXGRIkKBwdH/2gAMAwEAAhEDEQA/APSqKKK7uAooqKCaKKKAooooooooogooooCiiiiiiiiiCiiigKKFUnSmVCdBRS0VIUnQVJQ6xQJU0UUBRWmN6Q4V6bNKaKKKIKirPZGjDw5ptdEorRkERVGW8U2aRRVhweRpWQjWmzRaKKKIKKKKAooooCmw8Oe6kq84o+lKpwANKkmxM7VX7QUjvNqmmtpXF2ipxHBECqqp4biFdFdDKsJHnHzFa0zvwuooqKiNdAooqNqXw9xJqFwyb1oqKbNCpqKKgrxWgd9RhILGrGUEX0qhHjuq+ErTUCi2xoqKpxxvVdaMRZFZ61GaKKKiiJooooIoqaKAooooFeIMiRBkRMiNI3qrgsVHRXRcqtJAgDVjJgczJq6oQmPeAB3AMjzIE+VA1RU0UGqiiaBUbFFFAoCiiigVknfwqGwwelPFFDStcPqZ51BxjyHxq0Cs+KpmTRKnEedLW+NJRRVZFFFFAUUUUUUUUUQUUUUFWCSV1JN7kQdTsKMBWCqHbM0e80ASd4AGlGGsLAGXXYCLm8fGl4PDyIqly8T75uWkk6+MeFaF9RU1FZGuig0VGxRRFFATQaJpDiCgeiaqTF51PtB1po2sFVYzbUNjch50gRmuATRLS1FUcQxYhBvdjyXp1JtVyKAIGgqy9S46kvuaiiijIooooCiiigKKKKCjBRSkAKFOYQptBJnT49ZpsDCVFyoIEkwP8zFj8SaIzKQZEyLxN5H7eFLwOAqIqISVAtNzBM3OpN9Tc7km9aF9Fqimy1lWmig1DsBUaTFBNQGBqrFfYeNAzt7vfVNFFa0zRVOLiMDZCwjUEeUGrqKliy67zbh9ufabC4RFxMZMUKz5JCAwSCbywtCnSa+I7d/tYf3V4Jci3LtjKCxNoyhXIAFzfW22vp2PgI4yuiuJmGUMJG8Hevzt9o+DXB4vHw0gquK2UrplLZgBHIGPDpSTpqtTVvTo9e/s0bHfhWx+IZnfGxXdWYktkgLF/urmViALQRFfYV879gccP2fwx5YZXxR2T/8ANfRUZvcUUUUZFFFFAUUUUBRTIpO1aVHdS1ZNuamIqIWkZVDNKyRAJJjUk9KjgcVGQFJygAAEEEAARY30ir8BSw8z+Hmf6bVb7I9KbTRFp/WtS2EAOtVQeVReKxcXnSOxOtRRVNiiiiiCiiigKKKrxsQIpY7fE8h1pVk3dRwftl9ok4TBMH++xFK4a7zpnP8AlWZ6mBvXmf2L+z/8ZxAV1JwcP38Q85nKk6yxv3Buleh8Z9m8LFx1xcRA+JiJlYNdQJs2U6ECRI8K7nYvZGFwuGMLBWFmSTdmY/iZtzEDuAFTHLbpnhw113tb2dwGHw+GuFhIERZyqCSBmYsbkk6kmtNTUVXJNFFRQTRRRQFFFWYSbmi6JdelOqsd/jVxFFTa6Z+GSBrNztl/Edvz31rRSYRkSOZ5n8R509FANTmNRUxUGSiiitMCiiigKKKKApXUEQRIO1NRRWLhsHLiOb6CJ63130rbRRUmOo1llcru/oKKipqsCiiigKKKKAp0zHTSjDw5q3DSKWtQocgwasFUYgM38KuVYAqESaKKDRRU+FRU1BkooorTAooqKCaK+N7U+3mEjFMFDiQYLsSmH3ghWZh4DpNcDE+3vFmYGEnIDDY/6iX5dK1MbWL6uM8vUaK8o/8AHXG/14f/AMf1p1+3fF5vvYcTvhyYnkHHzq8anzsXqlFea8P/AGhcQPv4WE3/AA50PxLfKulw39oaH7/Duv8AwOr69Gy1ONJ62Pu+4orgcJ9r+EeJxChO2IpUb/jumx/FXcw8RWGZWDKdCpBB7iKlljcyl7U9FRTMpFRUUUU+GknpQGFrV9AEUVGxRRUE0E0VNQaANFFFBz8xo9rUEx8qkj5aV82epn7taiVeoxhmRlmJUrPKRE1Ba0ioLHerPWynlOMfIt9gsPbGfLEAEKxAgWnlM25GOpycR9gojJiAxE5xE90aXgx11tf7dfXPnepJrc+K9SeWPk4Xw+Dx/sO+X3XTNlMg2Aa0AN1uZ7qzD7F48A5Ek7Zhryn1rXorSNLW9eP1qc0evhV+r9SJ8nG+HlWL9l+JW5wG1Asc2s8j0MnQSPHEnZDlsgR80T90+emn617AfXidj41Lm2umxrc+Ny8xi/D4+7yMdnYiEhVYkAEgAyLKVNvCrOy+O4nh8VRhq+cwThQYxFtIZTOwPvajwr1ebQDb9qqYAMW3AjNF45TrFX6666z7p9PJdyurgYiuqsv3WUMOoIkfCrCa4waAAPdAgADSIiOnKKExCLhp3ma5/Vz2ejTsKBtFMK4hxWBnNe/y+VB4x41PfAJGt6T4vHzE07VFcd+NcH8J5beoqcPtFhre2sVZ8Z6e9dV069BNc1e0T/T5T8KvXjl5GR6iumPxHp3yaa6Kzji1mL/pTrjqd/QrpPUxvaotqYpM451OatcoOcFiSB3+vOlUW6fCgG4n59aiY8/r4V8pswPofnSk/pUH150T4fOiVDutpYKddbnw5UnD8QmIDkdXAMHI4MW3Kmx161g7YQNicKGAYHHa1rj2GNr8qloXjMMgQWwMQNG+XEwcskaxmYX5mukxmt/ptnkXsnjUGDhh8QZ3zQHeWY52Fsxk6DTlW3i8R9MLIX1IxGIGXuUE3tfbrpXK4LhkPAsCoIZMTNI1PvxPdA7qs4Zy2Pw7HU8I99yS/D/rNb4zdqcrrTXg9okFExgqO7MoCMXVcqljnfKApIBsQNPAaf4pAypnTOQCFLDMwM3VZmuciKeJ4hjEjAwh5+1k8idPRrIcNf8AZqwACOHRxzzqisGBP4gQCKccbpOV/Lu43EKkZ2CyLZiBMHrS4fEK1g4MawQem3OufgQvEY5hnLFCCokqFTL7MxpfMwmxzk1d2NwjJh5XGViznL7pKKzuyJI1yqQLWta0VzywkndZba1DvOsdOevrSpAn9etPHq3rasTcUwxxg5BBwy4fNeA6qRkAj8XOsTG1q3TSo2E/CfWtQQL3tOg856yKtd4sIB0mPH5fOkOIoZQzKGacoJgkgSYGv0qcRVlv4CB0kG/rakKfP9/lWjLf47UrG0Re5006+udc7jDalFPeD4Rc/ler0j4edKCCJsfDw76mdhA5fXxpJoWg+I9bUEHaCIOs6/pSrFuYn6iPCiSdCBvNo02te1dBoA8NaMg51WHBJE3ta+l+dT7T1Aq7XZZ6ba1M+t/Gk3t486lh18amzYPPbf8AU+VMSPX0+VKiecfnQD+v7VYivF4VHKswJKNmWGdYMEE2IBMMR4mobg0Zw5nOFKAh3EKSJAAIF8o8QKyJ2uhZ0COcTDKgoACxLrmEHNljLckkASJO1LgdsD2i4WLhPgs/+GWKMrwJKhkYgNF4NdJjkzvFtw+BRU9kAQhBkZnOuvvTIBvaaTE7OwyqLDf3f3Cr4iuoiIDhs0RaJ0A5UvaPFQRhIXOK650C5SVVSvvtmIGSSBe5kgVR2ZxbBzg42YYpBcEqqo6jKp9nlYwBaQTmkzpVmOWt7/6bnZoTs7DUkgEFgFY53lgCxuc0k+83va63qH7PwigwspKBQuXM/wB0CMszMbRNRxHaqYbrhurqWVmUwCrBImIJbNcACJMisnFdtnD97F4fFRCQDiE4ZCgmxdUYlR4VNZ3sW4xT/CYbPiNjBlbNlUriYiB8NVAVi6MM76gySRERpO7spCmcBnKZh7MYjMWAyjNd/ey5tAx5xaKnie0GBIwsB8WLF0ZFWRqFLsMx7pG0zTdmdoLjIzpmBViro9mR1/Cw22861eXHd7JNbU8ez+3wFDKAS5AKk3XDNyQwn7xqniWf+KQKy5jwzgsR7onEw75Juek/pVvaJYY2A+Viq5wciliuZLHIozFZgSBv31SS38Sr5HyexdC0H7xdCB5Kf3pMtSftUv8Atfw3EYoxmwsQq/ue0RlXKSAxUqRJEzBBtM6WrJi42KiJjOihmKLiJlugxHVMqvOqlgTzy6C0NxgxBjO6Kcx4V0Ripy+0LZlDT3DpWTiUD4CZcLELq2E7tiK2cZMTDZ/eb75gNZCRy2q6nS+/ctroY2PiNjezUoQ2EXzFSQuVlUyMwDfe6RzMXrXj2wjirigOqYRx1ZVykqM4Kssm4y2I/qFqhn/mFfKyr7IqTlMBmdGynwB/ek4pyMZ3K5gOHyywKoWDscpJ0F9dL1ice1ngtPxfEYycOcfMmZU9oyBZUKBmKqZBJyzDEwTFhNtvDFjOch2HJSoynSUzMZ6z5VwOFdWwVR04lkAEoMPMgAvAKy7INgSwI513MLikdFdXGRhZr690aj4RWfVmp28mN31aFxd5ItEWEk6ajpTFxptaNrDfrVLsIkAMDBvy/q8qT2uXfUe6DYRoB3muG9N7aQ0GNjprry+FGQdPJf8AtqFTXpsb/W9UZ/8AeEdP7u3wou2xdfCmCb+hUr6+lMI8K6iNPlPIVKqJt6PXzmgnf15UR0+VWDh9lf8AnONMXnAvH+6Fu6m+0pvwvMcXhfFXH50/Z/DYicTxDukJinDynMpjImU5gDudImo7cwsTEOCET/DxkxWZmCyq5rLJ1v3V33Ocu/Ec/wC2/uu4rHwUxw0F8c4eQBRLjDLz70kKi5t2I5CsfHOzcXwmZCh/v9SJI9mtvdJiobh8XC4l8dMM4iYyJmXMiujIpH4iFKkE6NqaniOHx2xsDHGGD7PODh5xmAdAMxbQm1wJ6E0mpe/i+Utt/kcef57hrEwmPr3Yel60/aEfy2OD/wCi9v8AkN/Oq+JwcVuJwcXJKYaOjQ6TLhR7oJEi28WNaO2uHd8HERFlnR0FwAMy5QT0uNAaz5x6r4qez2jCwtpwkjvyjbQ7Vi7GP8zxgH9eFtzwlrb2aSMJAykMqKuoIlVAOUg6SN4rF2fgYi42O7plXEZCvvLIyYYSGHhtNSWf1dT2be0e0UwYLhrsEHuuRLGAMwEDleKwjtxGdVIdQ8IhKPkZxcBWC5W00BpftOAcJBb/AB8Gb83FdRrRYWJAUadwHKs2YzGW78pbd6ZMDjkfOEYtkfIwYMmVgJAhhMXFLj8eiOqOSC5933WKmFJ+9EbG1YOyjmxOKBsfbA9f8NOtR2uzHG4UAAN7RoJFv8N46kCs8Zz4+NbOV1tsPauC2Gjq+YYlkAVizsJEIgGabH9qx9pcQjKExQ+FnhFZgImcwBgkajRokb0nZ2EBxWKNsHDREzajPmd2I0zFhcxXVKZgdCJB94Bha4N95E+AqZ8cMp390luUUk4gP3MMkx7wJgdcmX4ZvGrE4YYaLkGZhNzP4iWZoBgSSTbnV6IRJJJm8GI8OVQigEx+K8kW0+VcrbZrs1IVV98STIAzRMG2vW5pihzSTINhfST067mKjDUKNbX1PXX1yNQyXF/+W0CPmax4VcgOpPO1t9CR61qy39I/0n9ax4mIwsAdoAEz38jb4VX7/wDXHTMbU56V2D65UyG3d6sNqjr51DH616NNGmbWiNNPQoPwFVp0keM9+tMCfA2NU2cifneq1Ia+s36CJ2Mb1YRcRrby1tSAATHkKCCl5J6QSIm1+/urPxXGJhgs5KganKxAiLkhSBtV5Man8un51z+3x/LcR/7L/wD0O1XGS5SM5XULxPbfD4YVmezIHGUO5KkffIQSFjc2rRhdoYTIMYYinDInOWgATBJke7Bm2s1k+z6heGwojM2EjEneEUCTyAAHhXM4vDTE4vB4VVUYOGhxyigBGcsQoIGwJBjqa6zHG2z2/DHKybM3F8RJfBcshkhW4ZygXYoRDsN5gzqImK6B7Vwxgti5xiKl2ZUJIIIBBTVYJEgxFdKZ6H4nevnO1cAYfF4TAEJxIbCxk2cqAVJ5zMHpI3qTjn01rSXc6r+387omRC49ph4hIKCFV8342BmBp1FdRcWw90joYnxgkU+NseU2ix75qtbgGZn1qO4158sukx9mtdduI2fAxsV8jPhvDkoVzYZVQrZlZhKmAZ2qziva4j8PjLhnIjlsobDzZCjDO0NGrLAVja+pgddsFWUhwrIwIKnQg625VQEVMoUAIFACjQAaAdAK187U5Wde3+E4sPH8O6438ThoHOTJiYTEAsokhlJsHW9jYitOFxzPZcB0OpbEyBR/pYse4DxFai2t4juOn50iG/XX6x46Gs31N6lkv6rrS3MT076h++3T491SWIFhbXqZ0JPdVZcZZ06ft6tXPKqgsZ11EaWHlUhtRFvH4+Z8qGYabg6dOYqFMmx09RauewjYbaZrbk626+I8qtyn+kf9VQ8GxEag+dtb/tSZTz/6h+lYvdXUeZ5Hy3qW9bRvrSl+t9rade6oVjFxHhr6F69m2kgGBBHeel79akXuBHf849a0M0fLv0oibcu/lVQMDGWSN5356GgKFMjnQbXnp+lBUbfDlegGG0X7653bo/lccaf3OJ8EauiT0gx6/Os/G8MmIuR5KkQQGdVZeuUjMO+t42TKWs5TcY+xB/LYJvAwUtGpCA/O9c3tE+x4zD4lrYeIhwXY6IxOZCx2BMDpFdzguCTDWEBAAyhc+IwA5AMxA8KjFQMGDJmVhDKQCsawQReavOY5W+Ltm49JF0xAOsEzYRG/jNfP8U/8RxuEqH3OHzO7bB2+6nfae6eVbk7JwwuRXxFT+hcXECi1gBm90d0DpV3DcOmEgTDUKs6Aanck7nrUmeOG7OpZb3aH1Jm3w9CuVjh3YHCxEjYFrGCSxAUG10WZ0Jro4hWCNiCLTrp3j6VzP9mYX9G8zLCTa+usiedcJljL1Wq8ZsZlzpiIFayg/eIYQHMSNRIEHW/IK64qqAcXDs6+9JAKmMqkwdTMnkR1q5uysE/eUbKoJIgCTAK6CSx535QBiyYY90cLiZcxb3ZHvWWQCwmQDqeVr23Ljl2n2G/B9qqGXwjcQyk5QZymTvcfGNpNRTHuvtEGRQrPfMTAOuoaCzaEXXrFLYSfcXhiUzgXLqDAyhjIuJa+0E6gTWrhuCw3w/ewfZjMxyktMAlQbHcAHW061q8ZN6+x3HErj+7GLhjKpBMQGJkbzYBl31Fa8LFlVAbNAENIvpv1rK/ZeEpJCfeABEmAAQ1oIMyATzgVZgYCYdlEAmTE91pPKPjXDPLG9J+BYhJ19fpUhxOnLX4aUjmN5uNefX4TVrvMzAnbwrjtSOxN5AjUa2vbpVqgQPe+H0qgEXFojS/lers/dU2rer3jc3/KpCj4WqQ+++kflQx89PUV7JGg9oOnTb1NSrH9tT4bbVCtHQ+vU0jGI15bWtVQNPltvP7VasQNydN9KpZoMjbw85qxWOvXu50mtoAdJ1moadiBpH1NQ5Av00OneTSZpNo0jblt63oDIQb66AjQ+HOkzSTa8+VJiOQfdGYHkaXGxSokAtaYEZjzjQfGpvwztYV9beNUEa/DTv8AzrkP23iFcV/YlURGZc2YElT+MnnFss2G1J2f257R2UqoUIHlcx1JERHKrl6OWrddmeU7OzE38o/OqHeTrbu8dfKlbi0LC+vIN02i4oXEVh7sEdxEzsOdebKWTel2sVtuZj4b1YrQLHvHl+nxpcMDXe3y1tTBzAB28u6Kk6KZTM9833+v1qFYyAI6zt0pU5HYXnX96nExgqyRykDb1FXZsYmJ72WNv2tvSuR4/L0KZ9QDvEeU1RiOB7wOg8xN5is5UOG3PLb5n4VWCDfkNNrd3dVaiQbC5kDp1mrEa/TpvFukVhNmnMJibfKP0phHM/Cq2aGkG0nnaN/LbrT5B/TPW96NbddSfV/2pHN/W9Vs0626GjN6Pfyr27VZO35fraonWw9d+lUl513sNd+XX9KuQAH1P70lDqobpltO/wBaFaxJB3gcyOVRm2+lI5i1oA9d/fVCO0wPXj8KIt56dBy21pWcAgEEkwbHv38KGJCwDBnqfKN6ztkuATEny5R+dVYyoykGYa5/TzA8qcOfu3JAFzrfW9RiIZg2Ebc+vrnWN6nQZH7PwoIKghgQbmCIIjXcWpE7NwhLIgW0WJnKIgXPhWpVkX5+A9SfOlY2y73Pr1zqX1Mtd7/KansqwcMAkrY6kydR3n5U4v1n576+r0qEm0QPpr8xRhA9RbWxEfPX5Vy3u9ReyxpM2PTnoflUO2ogXsCdvX5UjuDuO/8AKkR7QDqeoAP5/vS2eDZwII+eo9aX6UrG99Sfr+dMz21nbp+1VAliCByBtbfepVM7EaWtfxFr7fWlVtZPkB6ioxFIGua4sTaOnMXpXN7+vRrNRLW5TNunq9Kz69flSOYgC97AfrQyTEmw2/Xr06VlGibTPwt0nnr8Krz/AOT4/SkeZ2jmdSf1/Src3NjO9vpV2r//2Q==" alt="Book 2">
                         <h3>Bạn Thật Sự Là Ai</h3>
                         <p class="price">$19.99</p>
                         <button class="btn-info">Xem thêm thông tin</button>
@@ -1638,7 +773,7 @@ button.navbar-toggler {
                   <div class="col">
                     <div class="slide">
                       <div class="card">
-                        <img src="https://bookish.vn/wp-content/uploads/2023/03/dung-de-cam-xuc-danh-lua-ly-tri.jpg" alt="Book 2">
+                        <img src="data:image/jpeg;base64,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" alt="Book 2">
                         <h3 style="font-size: 16px;">Đừng Để Cảm Xúc Đánh Lừa Lí Trí</h3>
                         <p class="price">$19.99</p>
                         <button class="btn-info">Xem thêm thông tin</button>
@@ -1650,7 +785,7 @@ button.navbar-toggler {
                   <div class="col">
                     <div class="slide">
                         <div class="card">
-                        <img src="https://bookish.vn/wp-content/uploads/2023/03/tro-bip-bom-cua-lo-au.jpg" alt="Book 2">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo8e_aS5RXUGXYVHN6R-aIZQdvTNu7CwAYNg&usqp=CAU" alt="Book 2">
                         <h3>Trò Bịp Bợm Của Lo Âu</h3>
                         <p class="price">$19.99</p>
                         <button class="btn-info">Xem thêm thông tin</button>
@@ -1721,8 +856,8 @@ button.navbar-toggler {
             <form>
               <div class="form-group">
                 
-                <input type="email" name="email" placeholder="Nhập email của bạn" required>
-                <button type="submit" id="submit-btn">Giữ Liên Lạc</button>
+                <input type="email" id="email" name="email" placeholder="Nhập email của bạn" required>
+                <button type="submit" id="submit-btn" disabled>Giữ Liên Lạc</button>
               </div>
             </form>
             <div class="privacy-policy">
@@ -1730,7 +865,7 @@ button.navbar-toggler {
               <label for="agree">Tôi đồng ý với Chính sách bảo mật</label>
             </div>
           </div>
-          <h3 class="solog sc_layouts_1" style="font-size: 35px;">Chọn Sách Của Bạn!</h3>
+          <h3 class="solog sc_layouts_1">Chọn Sách Của Bạn!</h3>
           <div
             style="
               background-color: rgb(151, 153, 153);
@@ -1742,19 +877,19 @@ button.navbar-toggler {
           ></div>
           <div class="container">
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4  wapimg" style="margin:115px 0 ;">
-              <div class="col image-container">
+              <div class="col ">
                 <a href="#" class="imgchon">
                   <img src="https://booklovers.ancorathemes.com/wp-content/uploads/2021/03/thumb-cat-2-copyright-570x741.jpg" alt="">
                   <p class="imgcover">Kịch!</p>
                 </a>
               </div>
-              <div class="col image-container">
+              <div class="col">
                 <a href="#" class="imgchon">
                   <img src="https://booklovers.ancorathemes.com/wp-content/uploads/2021/03/thumb-cat-1-copyright-570x741.jpg" alt="">
                   <p class="imgcover">Bí Ẩn!</p>
                 </a>
               </div>
-              <div class="col image-container">
+              <div class="col ">
                 <a href="#" class="imgchon">
                   <img src="https://booklovers.ancorathemes.com/wp-content/uploads/2021/03/thumb-cat-3-copyright-570x741.jpg" alt="">
                   <p class="imgcover">Tiểu Thuyết!</p>
@@ -1846,107 +981,11 @@ button.navbar-toggler {
               </div>
             </div>
           </div>
-    </main>
-    <footer>
-        <div class="container">
-            <div class="moni">
-                <div class="row">
-                    <div class="col-md-3 col-sm-12">
-                        <a class="navbar-brand justify-content-lg-start"
-                            href="http://127.0.0.1:5500/%C4%91%E1%BB%93%20%C3%A1n%201/index.html"><img
-                                src="//booklovers.ancorathemes.com/wp-content/uploads/2021/02/logo-1.png"
-                                alt="Booklovers" width="185" height="51"></a>
-                    </div>
-                    <div class="col-md-3 col-sm-12">
-                        <h5>What’s New</h5>
-                        <clr></clr>
-                        <div class="card border-0 my-3">
-                            <div class="row g-0 ">
-                                <div class="col-md-4">
-                                    <img src="https://book365.vn/upload/resize_cache/iblock/a0e/570_490_1/a0ec5da17c4f93b2ebf0c29d338d307d.jpeg"
-                                        class="img-fluid rounded-start" alt="">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h6 class="card-title">
-                                            Hãy khiến tương lai biết ơn</h6>
-                                        <p class="card-text">
-                                        </p>
-                                        <p class="card-text"><small class="text-body-secondary"><del>99.000đ</del>
-                                                <strong>84.150đ</strong></small></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card mb-3 border-0">
-                            <div class="row g-0">
-                                <div class="col-md-4">
-                                    <img src="https://book365.vn/upload/resize_cache/iblock/8c6/570_490_1/8c61fb34b40b2342a2b1d6c1e009f6f7.jpeg "
-                                        class="img-fluid rounded-start" alt="">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h6 class="card-title">
-                                            Ghi Chép Pháp Y</h6>
-                                        <p class="card-text">
-                                        </p>
-                                        <p class="card-text"><small class="text-body-secondary"><del>150.000đ</del>
-                                                <strong>127.500đ</strong></small></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-12">
-                        <h5>Links</h5>
-                        <div class="mo15 my-3">
-                            <ul class="mo14">
-                                <li id="menu-item-17420" class="menu-item-91 my-2">
-                                    <a href="#" aria-current="page"><span>Home</span></a>
-                                </li>
 
-                                <li id="menu-item-17420" class="menu-item-91 my-2">
-                                    <a href="#" aria-current="page"><span>About
-                                            Us</span></a>
-                                </li>
-                                <li id="menu-item-17420" class="menu-item-91 my-2">
-                                    <a href="#" aria-current="page"><span>Authors</span></a>
-                                </li>
-                                <li id="menu-item-17420" class="menu-item-91 my-2">
-                                    <a href="#" aria-current="page"><span>Events</span></a>
-                                </li>
-                                <li id="menu-item-17420" class="menu-item-91 my-2">
-                                    <a href="#" aria-current="page"><span>Store</span></a>
-                                </li>
-                                <li id="menu-item-17420" class="menu-item-91 my-2">
-                                    <a href="#" aria-current="page"><span>Contacts</span></a>
-                                </li>
-                            </ul>
-
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-12">
-                        <h5>Get in Touch</h5>
-                        <div class="my-4" style="color:#797979 ;">
-                            <p>Germany —<br>785 15h Street, Office
-                                478<br>Berlin, De 81566</p>
-                            <p><a class="underline_anim underline_do_hover"
-                                    style="display: inline-block; color: #797979;"
-                                    href="mailto:info@email.com">info@email.com</a>
-                            </p>
-                            <a class="bth2" id="menu-item-17455" href="tel:18408412569">+1 840 841 25
-                                69</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="copyright my-4" style="border-top:1px solid #9c9c9c ;">AncoraThemes © 2023. All
-                Rights Reserved.</div>
-        </div>
-        </div>
-   
 
     </main>
+
+
     <footer>
         <div class="container">
             <div class="moni">
@@ -2062,53 +1101,53 @@ button.navbar-toggler {
 
         searchButton.addEventListener('click', toggleSearch);
         toggleButton.addEventListener('click', toggleSearch);
-    
-    
-          const myButton = document.querySelector('#myButton');
-      const myElement = document.querySelector('#myElement');
 
-      myButton.addEventListener('click', function() {
-        if (myButton.classList.contains('active')) {
-          myElement.classList.remove('active');
-          myButton.classList.remove('active');
-        } else {
-          myElement.classList.add('active');
-          myButton.classList.add('active');
+
+        const myButton = document.querySelector('#myButton');
+        const myElement = document.querySelector('#myElement');
+
+        myButton.addEventListener('click', function () {
+            if (myButton.classList.contains('active')) {
+                myElement.classList.remove('active');
+                myButton.classList.remove('active');
+            } else {
+                myElement.classList.add('active');
+                myButton.classList.add('active');
+            }
+        });
+
+        let slider = document.querySelector(".slider");
+        let slides = document.querySelectorAll(".slide");
+        let currentIndex = 0;
+
+        function showSlides() {
+            // Nếu đang ở slide cuối cùng thì quay về slide đầu tiên
+            if (currentIndex === slides.length) {
+                currentIndex = 0;
+            }
+            // Dịch chuyển slider sang phải
         }
-      });
-
-      let slider = document.querySelector(".slider");
-      let slides = document.querySelectorAll(".slide");
-      let currentIndex = 0;
-
-      function showSlides() {
-      // Nếu đang ở slide cuối cùng thì quay về slide đầu tiên
-       if (currentIndex === slides.length) {
-        currentIndex = 0;
-        }
-      // Dịch chuyển slider sang phải
-      }
-    //   Lấy phần tử button và input
+        //   Lấy phần tử button và input
         var submitBtn = document.getElementById("submit-btn");
         var emailInput = document.getElementById("email-input");
         var privacyCheckbox = document.getElementById("privacy-checkbox");
 
         // Tạo hàm để kiểm tra điều kiện nhập email và check chính sách bảo mật
         function checkInputs() {
-        if (emailInput.value.trim() !== "" && privacyCheckbox.checked) {
-         submitBtn.disabled = false;
-         } else {
-            submitBtn.disabled = true;
-         }
+            if (emailInput.value.trim() !== "" && privacyCheckbox.checked) {
+                submitBtn.disabled = false;
+            } else {
+                submitBtn.disabled = true;
+            }
         }
 
         // Gọi hàm kiểm tra mỗi khi input email hoặc checkbox thay đổi
         // emailInput.addEventListener("input", checkInputs);
         // privacyCheckbox.addEventListener("change", checkInputs);
-        
-        
 
-    
+
+
+
         var searchButton = document.querySelector('.search-button');
         var searchInput = document.querySelector('.search-input');
         var toggleButton = document.getElementById('bth1');
@@ -2125,18 +1164,18 @@ button.navbar-toggler {
         var loginBtn = document.getElementById('login-btn');
         var modal = document.querySelector('.modal');
         var closeBtn = document.querySelector('.close');
-      
-        loginBtn.addEventListener('click', function() {
-          modal.style.display = 'flex';
+
+        loginBtn.addEventListener('click', function () {
+            modal.style.display = 'flex';
         });
-      
-        closeBtn.addEventListener('click', function() {
-          modal.style.display = 'none';
+
+        closeBtn.addEventListener('click', function () {
+            modal.style.display = 'none';
         });
     </script>
 
 
-    
+
 </body>
 
 </html>

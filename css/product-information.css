@@ -27,16 +27,33 @@
   }
   .collapse-horizontal .card {
     flex-shrink: 0;
-    width: 300px !important;
+    /* width: 300px !important; */
   }
 
 .fa-star {
     width: auto !important;
 }
-
-
-
-
+.collapse-horizontal .card {
+  flex-shrink: 0;
+  width: 100% !important;
+}
+h5.card-title {
+  width: 100%;
+  height: auto;
+  display: inline-flex;
+  margin-bottom: 5px;
+}
+p.card-text {
+  display:inline-block;
+}
+p.card-text del {
+  color: brown;
+}
+a.btn.btn-primary {
+  background-color: transparent;
+  color: blueviolet;
+  display: inline-block;
+}
 .btn-info,
 .btn-buy,
 .btn-cart {
@@ -53,6 +70,15 @@
 i.fa-brands.fa-shopify.fa-xl {
     float: none;
     position: absolute;
-    bottom: 77px;
-    left: 61px;
+    bottom: 59px;
+    left: 152px;
+}
+button.btn.btn-primary.m-3 {
+  background-color: transparent;
+  color: blueviolet;
+}
+button.btn.btn-primary.m-3:hover {
+  transform: scale(1.1);
+  color: coral;
+  background-color: beige;
 }

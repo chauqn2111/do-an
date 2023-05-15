@@ -1,0 +1,880 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    line-height: 27px;
+    font-family: 'Roboto';
+
+}
+
+/* thanh đièu hướng trên */
+
+
+.input-group {
+    position: relative;
+    top: 4px;
+}
+
+li.menu-item {
+    position: relative;
+
+    list-style: none;
+
+    border-style: solid;
+    border-width: 0px 1px 0px 0px;
+    border-color: #dedede;
+
+    padding: 0px 20px 0px 0px;
+
+}
+
+.justify-content-between {
+    height: 50px;
+}
+
+.text-end {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.input-group:not(.has-validation)>.dropdown-toggle:nth-last-child(n+3),
+.input-group:not(.has-validation)>.form-floating:not(:last-child)>.form-control,
+.input-group:not(.has-validation)>.form-floating:not(:last-child)>.form-select,
+.input-group:not(.has-validation)>:not(:last-child):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating) {
+
+    font-size: 14px;
+
+}
+
+.fa-brands,
+.fab {
+    display: block;
+    font-size: 15px;
+    border: none;
+}
+
+.fa-brands,
+.fab {
+    float: left;
+}
+
+.fa,
+.fa-brands,
+.fa-classic,
+.fa-regular,
+.fa-sharp,
+.fab,
+.far,
+.fas {
+
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.mono {
+    margin-bottom: 18px;
+}
+
+.mono {
+    text-decoration: none;
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.mono {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 24px;
+    border-style: solid;
+    border-width: 0px 0px 0px 1px;
+    border-color: #DEDEDE;
+}
+
+.sc_layouts_2 {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(255, 0, 0);
+}
+
+.sc_layouts_2:hover {
+    color: #000000;
+}
+
+.sc_layouts_1 {
+    font-size: 8px;
+    font-weight: 100;
+    color: rgb(138, 138, 138);
+    animation: doimauchu 3s infinite;
+
+}
+
+.fa-phone:before {
+    font-size: 11px;
+    color: rgb(138, 138, 138);
+    animation: doimauchu 3s infinite;
+}
+
+
+
+
+:hover.fa-facebook-f:before {
+    color: #006aff;
+}
+
+:hover.fa-twitter:before {
+    color: #006aff;
+}
+
+:hover.fa-instagram:before {
+    color: #ff00b3;
+}
+
+.menu-item {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* thanh điều hướng dưới */
+.momo {
+    margin-right: 45px;
+    display: flex;
+}
+
+.fa-bag-shopping:before,
+.fa-shopping-bag:before {
+    margin: 0px 4px 0px -29px;
+    padding: 0px 26px 1px 43px;
+    border: solid;
+    border-width: 0px 0px 0px 1px;
+    border-color: #DEDEDE;
+    cursor: pointer;
+}
+
+:hover.fa-bag-shopping:before,
+.fa-shopping-bag:before {
+    color: #f39c12;
+}
+
+.shadow-sm {
+    padding: 6px 0px 6px 0px;
+}
+
+.monu {
+    display: none;
+    position: absolute;
+    list-style: none;
+    margin-left: -70px;
+    background-color: #2a2a2a;
+    padding: 20px 40px 20px 40px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+:hover.mona .monu {
+    display: inline-block;
+}
+
+.mona a {
+    display: flex;
+    text-decoration: none;
+    color: #a8a8a8
+}
+
+:hover.nav-link.active {
+    text-decoration: underline;
+    color: #ff0000;
+}
+
+dl,
+ol,
+ul {
+    margin-top: 0;
+    margin-bottom: 0rem;
+}
+
+ol,
+ul {
+    padding-left: 0rem;
+}
+
+.my-2 {
+    list-style: none;
+}
+
+.monu {
+    display: none;
+    position: absolute;
+    list-style: none;
+    margin-left: -70px;
+    background-color: #2a2a2a;
+    padding: 20px 40px 20px 40px;
+    font-size: 16px;
+    font-weight: 400;
+    z-index: 9999999;
+}
+
+:hover.mona .monu {
+    display: inline-block;
+}
+
+.mona a {
+    text-decoration: none;
+    color: #e0e0e0
+}
+
+/* foooter */
+@keyframes doimauchu {
+    0% {
+        color: #f1c40f;
+    }
+
+    20% {
+        color: #e74c3c;
+    }
+
+    50% {
+        color: #000000;
+    }
+
+    70% {
+        color: #2ecc71;
+    }
+
+    100% {
+        color: #9742a0;
+    }
+}
+
+.bth2 {
+    font-size: 19px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ff0000;
+    animation: doimauchu 3s infinite;
+}
+
+
+
+h5 {
+
+    border-bottom: 1px solid rgb(172, 172, 172);
+    display: inline-block;
+    width: 44%;
+    height: 60px;
+    animation: doimauchu 3s infinite;
+}
+
+.mo14 a {
+    text-decoration: none;
+    color: #797979;
+    position: relative;
+}
+
+.underline_anim.underline_do_hover {
+    text-decoration: none;
+    border-bottom: 1px solid #797979;
+}
+
+.card.border-0.my-3 {
+    border-bottom: 1px solid #797979;
+}
+
+/*  taplet */
+@media only screen and (max-width: 769px) {
+
+
+    .fa-bag-shopping:before,
+    .fa-shopping-bag:before {
+        position: relative;
+        left: 625px;
+        bottom: 43px;
+    }
+
+    img,
+    svg {
+        height: auto;
+        width: 133px;
+        top: 10px;
+    }
+
+    .bg-body-tertiary {
+        height: 60px;
+    }
+
+    .collapse:not(.show) {
+        display: block;
+    }
+
+    i#sangf {
+        position: relative;
+        left: 18px;
+        bottom: 43px;
+    }
+
+    button.navbar-toggler {
+        display: none;
+    }
+
+    .navbar-nav .nav-link.active,
+    .navbar-nav .nav-link.show {
+        width: 100%;
+        margin-left: 25px;
+    }
+
+    .bg-white {
+        height: 105px;
+    }
+
+    .input-group {
+        position: relative;
+        top: 0px;
+    }
+
+    .search {
+        display: block;
+        font-size: 100%;
+        max-width: 100%;
+    }
+
+    i.fa-solid.fa-xmark {
+        position: relative;
+        left: 355px;
+        top: 50px;
+    }
+
+
+
+}
+
+/* mobile */
+@media only screen and (max-width: 426px) {
+    .search-input.show {
+        width: 345px;
+    }
+    i#sangf {
+        position: absolute;
+        left: 80px;
+        bottom: 0px;
+    }
+    .bg-body-tertiary {
+        height: 67px;
+    }
+
+    .bg-white {
+        height: 68px;
+    }
+
+
+
+
+
+    .sc_layouts_item.elementor-element.elementor-element-c5c8c1b.sc_fly_static.elementor-widget.elementor-widget-trx_sc_layouts_iconed_text.trx_addons_parallax_layers_inited.trx_addons_parallax_blocks_inited {
+        top: 13px;
+        position: absolute;
+        right: 1px;
+    }
+
+    .col-3 {
+        flex: 0 0 auto;
+        width: 33%;
+    }
+
+    .sc_layouts_item.elementor-element.elementor-element-2b15188.sc_fly_static.elementor-widget.elementor-widget-trx_sc_layouts_login.trx_addons_parallax_layers_inited.trx_addons_parallax_blocks_inited {
+        top: 15px;
+        left: 140px;
+        position: absolute;
+    }
+
+    button.navbar-toggler {
+        right: 160px;
+        position: absolute;
+    }
+
+    input.search_field.fill_inited {
+
+        width: 265px;
+        height: 50px;
+
+    }
+
+    button.navbar-toggler {
+        right: 160px;
+        position: absolute;
+    }
+
+    button#icon-search {
+        position: relative;
+        top: 181px;
+    }
+
+
+
+    .fa-phone:before {
+        content: "\f095";
+        left: 3px;
+    }
+
+
+    img,
+    svg {
+        height: auto;
+        width: 145px;
+    }
+
+    [type=button]:not(:disabled),
+    [type=reset]:not(:disabled),
+    [type=submit]:not(:disabled),
+    button:not(:disabled) {
+        display: inline-block;
+        border: 0px;
+    }
+
+    .fa-bag-shopping:before,
+    .fa-shopping-bag:before {
+        border: none;
+        position: relative;
+        left: 299px;
+        bottom: 17px;
+        padding: 5px;
+        position: absolute;
+        display: inline-flex;
+
+    }
+
+    .collapse:not(.show) {
+        display: none;
+    }
+
+    .fa-magnifying-glass:before {
+        position: relative;
+        font-size: 19px;
+        top: 13px;
+        left: 10px;
+    }
+
+    .fa-search:before {
+        position: relative;
+        top: -7px;
+        left: 255px;
+    }
+    /* .elementor-widget-container {
+        margin-top: 28px;
+    } */
+
+    .sc_socials.sc_socials_default.sc_align_none {
+        margin-top: 26px;
+    }
+
+
+
+}
+
+@media only screen and (max-width: 376px) {
+    i#sangf {
+        position: relative;
+        left: -8px;
+        bottom: 41px;
+    }
+
+    .sc_layouts_iconed_text {
+        top: 37px;
+        /* margin-top: 36px; */
+        margin-right: 8px;
+        position: absolute;
+        right: 0px;
+        width: 200px;
+    }
+
+    .bg-body-tertiary {
+        height: 110px;
+
+    }
+
+    button.navbar-toggler {
+        right: 100px;
+        position: absolute;
+    }
+
+    span.fa-brands.fa-instagram {
+        top: 23px;
+        right: 151px;
+    }
+
+    span.fa-brands.fa-twitter {
+        top: 23px;
+        right: 140px;
+    }
+
+    .sc_layouts_item.elementor-element.elementor-element-2b15188.sc_fly_static.elementor-widget.elementor-widget-trx_sc_layouts_login.trx_addons_parallax_layers_inited.trx_addons_parallax_blocks_inited {
+        top: 15px;
+        left: 172px;
+        position: absolute;
+    }
+
+    .fa-bag-shopping:before {
+        left: 329px;
+    bottom: 63px;
+    }
+
+    .mono {
+        display: none;
+    }
+
+    .sc_layouts_item.elementor-element.elementor-element-35e4a0a.sc_fly_static.elementor-widget.elementor-widget-trx_sc_socials.trx_addons_parallax_layers_inited.trx_addons_parallax_blocks_inited {
+        position: relative;
+        right: 15px;
+    }
+
+    .navbar-nav {
+        position: absolute;
+        z-index: 1;
+        left: 20px;
+        top: 60px;
+    }
+
+    #gogo {
+        position: relative;
+        left: -15px;
+    }
+    .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+        background-color: #c0c0c0;
+        padding: 20px;
+    }
+
+}
+@media only screen and (max-width: 321px) {
+    .fa-bag-shopping:before {
+        left: 249px;
+        bottom: 63px;
+    }
+    
+}
+
+
+/* tìm kiếm */
+
+
+:hover.fa-search:before {
+    color: #ff0000;
+}
+
+.fa-search:before {
+    font-size: 19px;
+    color: #5c5c5c;
+}
+
+
+
+.search-button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.search-input {
+    display: none;
+    position: absolute;
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, .9);
+}
+
+.search-input form {
+    position: relative;
+}
+
+.search-input form .search_field {
+    position: relative;
+    font-size: 50px;
+    border: none;
+    border-bottom: 1px solid #a8a8a8;
+    top: 200px;
+    padding: 0px 50px;
+}
+
+.search-input form .search_submit {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.search-input form .search_close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0 8px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+.search-input form:hover .search_close {
+    visibility: visible;
+}
+
+.search-input.show {
+    display: block;
+}
+
+button#icon-search {
+    border: none;
+    background-color: rgb(255, 255, 255);
+}
+
+button#bth1 {
+    border: none;
+}
+
+#icon-search {
+    position: relative;
+    font-size: 30px;
+    top: 197px;
+    right: 40px;
+
+}
+
+.fa-close:before,
+.fa-multiply:before,
+.fa-remove:before,
+.fa-times:before,
+.fa-xmark:before {
+    position: absolute;
+    bottom: 10px;
+    font-size: 40px;
+    right: 410px;
+    transition: all ease 1s;
+
+
+}
+
+:hover.fa-xmark:before {
+    transform: rotate(180deg);
+
+}
+
+.btn-close.chau-chau {
+    transition: all ease 1s;
+}
+
+:hover.btn-close.chau-chau {
+    transform: rotate(180deg);
+
+}
+
+.fa-xmark:before {
+    display: block;
+}
+
+.sc_layouts_cart_items {
+    display: none;
+}
+
+#htn {
+    display: none;
+}
+
+
+
+.sc_layouts_cart_items_short {
+    display: none;
+}
+
+.sc_layouts_item_details_line2.sc_layouts_cart_totals {
+    display: none;
+}
+
+/* phần đăng nhập */
+.chau-chau {
+    position: absolute;
+    top: 10px;
+    right: 13px;
+    padding: 12px;
+    margin: 5px;
+}
+
+.chau-loi {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.chau-sang {
+    border: none;
+}
+
+.modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#exampleModalLabel {
+    color: rgb(81, 58, 58);
+}
+
+.chau-12-12 {
+    display: flex;
+}
+
+.col-form-label {
+    min-width: 80px;
+    display: inline-flex;
+}
+
+.form-control {
+    flex: 1;
+}
+
+.chontp {
+    text-align: center;
+
+}
+
+#sex {
+    margin: 0 13px;
+}
+
+.chau-huan {
+    display: flex;
+    gap: 15px;
+}
+
+.modal-container {
+
+    text-align: center;
+}
+
+.modal {
+    --bs-modal-width: 800px
+}
+
+.modal-dialog {
+    margin-top: 65px;
+}
+
+.modal-footer {
+    justify-content: space-between;
+}
+
+.chau-12 {
+    text-align: right;
+}
+
+.form-action {
+    justify-content: center;
+    display: flex;
+}
+
+.laviem {
+    background-color: transparent;
+    border: solid #6a6767eb 0.7px;
+    padding: 5px 30px;
+    text-transform: uppercase;
+    width: 80%;
+
+}
+
+.laviem:hover {
+    border: 0;
+    opacity: 0.6;
+    font-size: 20px;
+}
+
+:hover.btn-close.chau-chau {
+    transform: rotate(180deg);
+}
+
+.laviemm {
+    width: 30%;
+    border: solid rgb(165, 152, 127) 0.8;
+}
+
+.modal.fade {
+    transform: translateY(-100%);
+    transition: transform 0.6s ease;
+}
+
+.modal.fade.show {
+    transform: translateY(0);
+}
+
+.elementor-widget-container {
+    display: flex;
+    padding: 0px 0px;
+
+}
+
+.btn.chau-sang {
+    border: none;
+    color: #777777;
+    padding: 1px 1px;
+    font-size: 14px;
+    font-weight: 500;
+
+}
+
+.btn.sangpp {
+    color: rgb(255, 0, 0);
+    border: none;
+    padding: 1px 3px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.lavien {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    margin-top: -55px;
+    margin-right: 15px;
+    border-radius: 5px;
+    border: none;
+  background-color: transparent;
+  color: #333;
+  font-size: 16px;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: rgba(161, 66, 88, 0.573);
+  border: solid #6a6767eb 0.7px;
+  padding: 5px 30px;
+  text-transform: uppercase;
+}
+.lavien:hover {
+  border: 0;
+  opacity: 0.6;
+  font-size: 20px;
+}
+.laviem {
+    background-color: rgba(172, 68, 125, 0.566);
+    border: solid #6a6767eb 0.7px;
+    padding: 5px 30px;
+    text-transform: uppercase;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    margin-top: 19px;
+    margin-right: 15px;
+    border-radius: 5px;
+    width: 30%;
+}
+.form-action {
+    justify-content: center;
+    display: flex;
+}
