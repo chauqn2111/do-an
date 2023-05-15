@@ -5,24 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Store</title>
+    <title>Contacts</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
+        rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css ">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="shortcut icon"
         href="https://scontent.fdad7-1.fna.fbcdn.net/v/t39.30808-6/337100965_3497961447157482_3915042219012048561_n.jpg?stp=dst-jpg_p843x403&_nc_cat=109&ccb=1-7&_nc_sid=5cd70e&_nc_ohc=GqPd9OqzQGwAX-GYRkw&_nc_ht=scontent.fdad7-1.fna&oh=00_AfAZk-v5L-CrKcSJvZGibtMWgua-aiMJW6asjQTnvwnTpw&oe=643901BD"
         type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
-    <link rel="stylesheet" href="css/store.css">
     <link rel="stylesheet" href="css/lamdn.css">
+    <link rel="stylesheet" href="css/contact.css">
 </head>
-<script>
-    $(document).ready(function () {
-        $('.accordion-header').click(function () {
-            $(this).parent().children('.accordion-body').slideToggle();
-        });
-    });
-</script>
+
 
 <body>
 
@@ -266,7 +263,7 @@
                                 <div class="navbar-nav flex-md-row" style="column-gap: 10px;">
 
                                     <ul class="mona">
-                                        <a class="nav-link active " href="trangchu.html">HOME</a>
+                                        <a class="nav-link active " href="#">HOME</a>
                                         <ul class="monu ">
                                             <li class="menu-item-34 my-2">
                                                 <a href="trangchu.html" aria-current="page"><span>Home
@@ -437,394 +434,121 @@
         </div>
         </div>
     </header>
+
+
     <main>
+        <div class="container">
+            <div class="breadcrumb-contents">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="">Home</a></li>
+                        <li class="breadcrumb-item active">Contact</li>
+                    </ol>
+                </nav>
+            </div>
+            <div class="sodu">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7667.855029606344!2d108.2184921!3d16.0692508!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31421833d25888a9%3A0x33aba21e600a4fa6!2zMjkgWcOqbiBCw6FpLCBI4bqjaSBDaMOidSAxLCBI4bqjaSBDaMOidSwgxJDDoCBO4bq1bmcgNTUwMDAw!5e0!3m2!1svi!2s!4v1683264468291!5m2!1svi!2s"
+                    width="1000" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="row my-5">
 
-        <div class="elementor-widget">
-            <div class="sc_layouts_title sc_align_center with_content without_image without_tint">
-                <div class="sc_layouts_title_content">
-                    <div class="sc_layouts_title_title">
-                        <h1 class="sc_layouts_title_caption">Shop</h1>
-                    </div>
-                    <div class="sc_layouts_title_breadcrumbs">
-                        <div class="breadcrumbs"><a class="breadcrumbs_item home underline_hover"
-                                href="https://booklovers.ancorathemes.com/">Home</a><span
-                                class="breadcrumbs_delimiter"></span>-<span class="breadcrumbs_item current">Shop</span>
+                <div class="col-12 col-lg-6">
+
+
+                    <div class="contact_adress">
+                        <div class="ct_address">
+                            <h3 class="ct_title">Location &amp; Details</h3>
+                            <p>It is a long established fact that readewill be distracted by the readable content of
+                                a page when looking
+                                at ilayout.</p>
+                        </div>
+                        <div class="address_wrapper">
+                            <div class="address">
+                                <div class="icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-info-text">
+                                    <p><span>Address:</span> 29 Yên Bái, Hải Châu 1, Hải Châu, Đà Nẵng 550000</p>
+                                </div>
+                            </div>
+                            <div class="address">
+                                <div class="icon">
+                                    <i class="far fa-envelope"></i>
+                                </div>
+                                <div class="contact-info-text">
+                                    <p><span>Email: </span> grou3kich@gmail.com </p>
+                                </div>
+                            </div>
+                            <div class="address">
+                                <div class="icon">
+                                    <i class="fas fa-mobile-alt"></i>
+                                </div>
+                                <div class="contact-info-text">
+                                    <p><span>Phone:</span> +1 840 841 25 69 </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                </div>
+
+                <div class="col-12 col-lg-6">
+
+                    <div class="contact_form">
+                        <h3 class="ct_title">Send Us a Message</h3>
+                        <form id="contact-form" action="php/mail.php" method="post" class="contact-form">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <label>Your Name <span class="required">*</span></label>
+                                        <input type="text" id="con_name" name="con_name" class="form-control"
+                                            required="" fdprocessedid="gimrd">
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <label>Your Email <span class="required">*</span></label>
+                                        <input type="email" id="con_email" name="con_email" class="form-control"
+                                            required="" fdprocessedid="pqbex">
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <label>Your Phone*</label>
+                                        <input type="text" id="con_phone" name="con_phone" class="form-control"
+                                            fdprocessedid="wacasyj">
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <label>Your Message</label>
+                                        <textarea id="con_message" name="con_message" class="form-control"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-btn my-4">
+                                        <button type="submit" value="submit" id="submit" class="btn btn-black"
+                                            name="submit" fdprocessedid="8k0k83">send</button>
+                                    </div>
+                                    <div class="form__output"></div>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="form-output">
+                            <p class="form-messege"></p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
-
-        <div class="container my-5">
-            <div class="row">
-                <div class="col-12 col-lg-4">
-                    <div class="wapper">
-                        <div class="accordion">
-                            <div class="accordion-header">
-                                <h4>CATEGORY</h4>
-                                <i class="fa-solid fa-angle-down" style="color: #000000;"></i>
-                            </div>
-                            <div class="sida"></div>
-                            <div class="accordion-body">
-                                <span id="sanghi" class=" sadi my-2">All categories</span>
-                                <span id="sanghi" class=" sadi my-2">Uncategorized</span>
-                                <span id="sanghi" class=" sadi my-2">Drama</span>
-                                <span id="sanghi" class=" sadi my-2">Mystery</span>
-                                <span id="sanghi" class=" sadi my-2">Novels</span>
-                                <span id="sanghi" class=" sadi my-2">Recipe Books</span>
-                            </div>
-                        </div>
-
-                        <div class="accordion my-5">
-                            <div class="accordion-header">
-                                <h4>AUTHOR</h4>
-                                <i class="fa-solid fa-angle-down" style="color: #000000;"></i>
-                            </div>
-                            <div class="sida"></div>
-                            <div class="accordion-body">
-
-                                <span id="sanghi" class=" sadi my-2">Burt Geller</span>
-                                <span id="sanghi" class=" sadi my-2">Candy Carson</span>
-                                <span id="sanghi" class=" sadi my-2">Drew Berrymore</span>
-                                <span id="sanghi" class=" sadi my-2">Karen Perry</span>
-                                <span id="sanghi" class=" sadi my-2">Richard Mann</span>
-
-                            </div>
-                        </div>
-                        <div class="accordion my-5">
-                            <div class="accordion-header">
-                                <h4>FORMAT</h4>
-                                <i class="fa-solid fa-angle-down" style="color: #000000;"></i>
-                            </div>
-                            <div class="sida"></div>
-                            <div class="accordion-body">
-                                <span id="sanghi" class=" sadi my-2">Online Book</span>
-                                <span id="sanghi" class=" sadi my-2">Paper Book</span>
-
-
-                            </div>
-                        </div>
-                        <div class="accordion my-5">
-                            <div class="accordion-header">
-                                <h4>RATING</h4>
-                                <i class="fa-solid fa-angle-down" style="color: #000000;"></i>
-                            </div>
-                            <div class="sida"></div>
-                            <div class="accordion-body">
-                                <span id="sanghi" class=" sadi my-2">Burt Geller</span>
-                                <span id="sanghi" class=" sadi my-2">Candy Carson</span>
-                                <span id="sanghi" class=" sadi my-2">Drew Berrymore</span>
-                                <span id="sanghi" class=" sadi my-2">Karen Perry</span>
-                                <span id="sanghi" class=" sadi my-2">Richard Mann</span>
-
-                            </div>
-                        </div>
-
-                        <div class="accordion my-5">
-                            <div class="accordion-header">
-                                <h4>PRICE</h4>
-                                <i class="fa-solid fa-angle-down" style="color: #000000;"></i>
-                            </div>
-
-                        </div>
-
-                        <h4
-                            style="border-bottom: 1px solid #a8a8a8;width: 70px; height: 100px; display: flex; column-gap: 125px; align-items: center; color: #000000; white-space: nowrap;">
-                            RECENT PRODUCTS <i class="fa-solid fa-chevron-down"
-                                style="color: #000000; font-size: 15px;"></i>
-                        </h4>
-                        <ul class="product_list_widget my-5">
-                            <li class="">
-                                <a href="stores.html">
-                                    <img width="400" height="600"
-                                        src="https://booklovers.ancorathemes.com/wp-content/uploads/2020/05/book12-copyright-400x600.jpg"
-                                        class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt=""
-                                        decoding="async" loading="lazy"> <span class="product-title"> a Really
-                                        Strange Story</span>
-                                </a>
-
-                                <span class="woocommerce-Price-amount amount"><bdi><span
-                                            class="woocommerce-Price-currencySymbol">$</span>8.00</bdi></span> – <span
-                                    class="woocommerce-Price-amount amount"><bdi><span
-                                            class="woocommerce-Price-currencySymbol">$</span>18.00</bdi></span>
-                            </li>
-                            <li class="my-3">
-                                <a href="stores.html">
-                                    <img width="400" height="600"
-                                        src="https://booklovers.ancorathemes.com/wp-content/uploads/2020/05/book8-copyright-400x600.jpg"
-                                        class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt=""
-                                        decoding="async" loading="lazy"> <span class="product-title">New Galaxy</span>
-                                </a>
-
-                                <span class="woocommerce-Price-amount amount"><bdi><span
-                                            class="woocommerce-Price-currencySymbol">$</span>7.90</bdi></span> – <span
-                                    class="woocommerce-Price-amount amount"><bdi><span
-                                            class="woocommerce-Price-currencySymbol">$</span>16.90</bdi></span>
-                            </li>
-                        </ul>
-
-
-
-
-
-                    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-                </div>
-                <div class="col-12 col-lg-8">
-                    <div class="container">
-                        <div class="csb">
-                            <div class="csv">Showing all 12 results
-
-                            </div>
-                            <div class="accordion accordion-flush" id="accordionFlushExample">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseOne">
-                                            Sort by latest
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapseOne" class="accordion-collapse collapse"
-                                        data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body-y">
-                                            <p class="csf" href="">Sort by popularity</p>
-                                            <p class="csf" href="">Sort by average rating</p>
-                                            <p class="csf" href="">Sort by latest</p>
-                                            <p class="csf" href="">Sort by price: low to high</p>
-                                            <p class="csf" href="">Sort by price: high to low</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                            </div>
-                        </div>
-                        <div class="row  gy-5 row-cols-2 row-cols-md-3 row-cols-lg-4 border-0">
-
-                            <div class="col">
-
-                                <div class="product-item bg-white p-3">
-                                    <div class="item-label">
-
-                                    </div>
-                                    <img class="img-fluid"
-                                        src="https://booklovers.ancorathemes.com/wp-content/uploads/2020/05/book11-copyright-400x600.jpg"
-                                        alt="">
-
-                                    <h4 class="mt-3">A Doctor in the House</h4>
-                                    <p class="mt-2">Candy Carson</p>
-                                    <strong class="text-danger">$6.50 – $16.99</strong>
-
-
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="product-item bg-white p-3">
-                                    <div class="item-label">
-
-                                    </div> <img class="img-fluid"
-                                        src="https://booklovers.ancorathemes.com/wp-content/uploads/2020/05/book13-copyright-400x600.jpg"
-                                        alt="">
-
-                                    <h4 class="mt-3">Wildflower </h4>
-                                    <p class="mt-2">Drew Berrymore</p>
-                                    <strong class="text-danger">$10.99 – $20.00</strong>
-
-
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="product-item bg-white p-3">
-                                    <div class="item-label">
-
-                                    </div><img class="img-fluid"
-                                        src="https://booklovers.ancorathemes.com/wp-content/uploads/2020/05/book8-copyright-400x600.jpg"
-                                        class="card-img-top" alt="">
-                                    <h4 class="mt-3">New Galaxy </h4>
-                                    <p class="mt-2">Richard Mann</p>
-                                    <strong class="text-danger">$7.90 – $16.90</strong>
-
-
-
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="product-item bg-white p-3">
-                                    <div class="item-label">
-
-                                    </div><img class="img-fluid"
-                                        src="https://booklovers.ancorathemes.com/wp-content/uploads/2020/05/book5-copyright-400x600.jpg"
-                                        alt="">
-                                    <h4 class="mt-3"> The Long Road to the Deep Silence</h4>
-                                    <p class="mt-2">Richard Mann</p>
-                                    <strong class="text-danger">$12.00 – $22.00 </strong>
-
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="product-item bg-white p-3 ">
-                                    <img class="img-fluid"
-                                        src="https://booklovers.ancorathemes.com/wp-content/uploads/2020/05/book4-copyright-400x600.jpg"
-                                        alt="">
-                                    <h4 class="mt-3">Life in the Gardene</h4>
-                                    <p class="mt-2">Candy Carson</p>
-                                    <strong class="text-danger">$11.99 – $25.00 </strong>
-
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="product-item bg-white p-3"><img class="img-fluid"
-                                        src="https://booklovers.ancorathemes.com/wp-content/uploads/2020/05/book12-copyright-400x600.jpg"
-                                        alt="">
-                                    <h4 class="mt-3">It’s a Really Strange Story</h4>
-                                    <p class="mt-2">Burt Geller</p>
-                                    <strong class="text-danger">$8.00 – $18.00 </strong>
-
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="product-item bg-white p-3"><img class="img-fluid"
-                                        src="https://booklovers.ancorathemes.com/wp-content/uploads/2020/05/book3-copyright-400x600.jpg"
-                                        alt="">
-                                    <h4 class="mt-3">The Son</h4>
-                                    <p class="mt-2">Burt Geller</p>
-                                    <strong class="text-danger">$12.00 – $21.00</strong>
-
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="product-item bg-white p-3"><img class="img-fluid"
-                                        src="https://booklovers.ancorathemes.com/wp-content/uploads/2020/05/book9-copyright-1-400x600.jpg"
-                                        alt="">
-                                    <h4 class="mt-3">Lonely Man in White Hat</h4>
-                                    <p class="mt-2">Burt Geller</p>
-                                    <strong class="text-danger">$10.00 – $19.00 </strong>
-
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="product-item bg-white p-3"><img class="img-fluid"
-                                        src="https://booklovers.ancorathemes.com/wp-content/uploads/2020/05/book1-copyright-400x600.jpg"
-                                        alt="">
-                                    <h4 class="mt-3">Let the Sun Shine</h4>
-                                    <p class="mt-2">Richard Mann</p>
-                                    <strong class="text-danger">$24.00 </strong>
-
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="product-item bg-white p-3"><img class="img-fluid"
-                                        src="https://booklovers.ancorathemes.com/wp-content/uploads/2020/05/book2-copyright-400x600.jpg"
-                                        alt="">
-                                    <h4 class="mt-3">The Forest</h4>
-                                    <p class="mt-2">Karen Perry</p>
-                                    <strong class="text-danger">$8.00 – $15.00 </strong>
-
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="product-item bg-white p-3"><img class="img-fluid"
-                                        src="https://booklovers.ancorathemes.com/wp-content/uploads/2020/05/book6-copyright-400x600.jpg"
-                                        alt="">
-                                    <h4 class="mt-3">A Banquet of Mouse</h4>
-                                    <p class="mt-2">Richard Mann</p>
-                                    <strong class="text-danger">$12.00 – $18.00 </strong>
-
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="product-item bg-white p-3"><img class="img-fluid"
-                                        src="https://booklovers.ancorathemes.com/wp-content/uploads/2020/05/book10-copyright-400x600.jpg"
-                                        alt="">
-                                    <h4 class="mt-3">The Story About Me</h4>
-                                    <p class="mt-2">Drew Berrymore </p>
-                                    <strong class="text-danger">$12.00 $10.00
-                                    </strong>
-
-
-                                </div>
-                            </div>
-
-
-                        </div>
-
-
-
-
-
-                    </div>
-
-                    <div>
-
-                    </div>
-
-
-
-
-
-
-
-
-
-
-                </div>
-            </div>
-
-            <!--  -->
-            <div class="cabi">
-                <div class="rubi">
-                    Get -30% purchase
-                </div>
-                <div class="ribi animate__animated  animate__zoomInDown animate__infinite">on order over $299.00</div>
-                <a href="#"
-                    class="sc_button sc_button_shadow hide_on_mobile sc_button_default sc_button_size_normal sc_button_icon_left"><span
-                        class="sc_button_text"><span class="sc_button_title">MORE INFO</span></span></a>
-            </div>
-
-
-
-
-        </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
     </main>
+
+
     <footer>
         <div class="container">
             <div class="moni">
@@ -940,7 +664,81 @@
 
         searchButton.addEventListener('click', toggleSearch);
         toggleButton.addEventListener('click', toggleSearch);
+
+
+        const myButton = document.querySelector('#myButton');
+        const myElement = document.querySelector('#myElement');
+
+        myButton.addEventListener('click', function () {
+            if (myButton.classList.contains('active')) {
+                myElement.classList.remove('active');
+                myButton.classList.remove('active');
+            } else {
+                myElement.classList.add('active');
+                myButton.classList.add('active');
+            }
+        });
+
+        let slider = document.querySelector(".slider");
+        let slides = document.querySelectorAll(".slide");
+        let currentIndex = 0;
+
+        function showSlides() {
+            // Nếu đang ở slide cuối cùng thì quay về slide đầu tiên
+            if (currentIndex === slides.length) {
+                currentIndex = 0;
+            }
+            // Dịch chuyển slider sang phải
+        }
+        //   Lấy phần tử button và input
+        var submitBtn = document.getElementById("submit-btn");
+        var emailInput = document.getElementById("email-input");
+        var privacyCheckbox = document.getElementById("privacy-checkbox");
+
+        // Tạo hàm để kiểm tra điều kiện nhập email và check chính sách bảo mật
+        function checkInputs() {
+            if (emailInput.value.trim() !== "" && privacyCheckbox.checked) {
+                submitBtn.disabled = false;
+            } else {
+                submitBtn.disabled = true;
+            }
+        }
+
+        // Gọi hàm kiểm tra mỗi khi input email hoặc checkbox thay đổi
+        // emailInput.addEventListener("input", checkInputs);
+        // privacyCheckbox.addEventListener("change", checkInputs);
+
+
+
+
+        var searchButton = document.querySelector('.search-button');
+        var searchInput = document.querySelector('.search-input');
+        var toggleButton = document.getElementById('bth1');
+        var myDiv = document.getElementById('bth');
+
+        function toggleSearch() {
+            searchInput.classList.toggle('show');
+            myDiv.classList.toggle('hide');
+        }
+
+        searchButton.addEventListener('click', toggleSearch);
+        toggleButton.addEventListener('click', toggleSearch);
+
+        var loginBtn = document.getElementById('login-btn');
+        var modal = document.querySelector('.modal');
+        var closeBtn = document.querySelector('.close');
+
+        loginBtn.addEventListener('click', function () {
+            modal.style.display = 'flex';
+        });
+
+        closeBtn.addEventListener('click', function () {
+            modal.style.display = 'none';
+        });
     </script>
+
+
+
 </body>
 
 </html>

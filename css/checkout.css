@@ -1,0 +1,126 @@
+a{
+    text-decoration: none;
+    color: rgb(109, 109, 109);
+}
+.breadcrumb-contents .breadcrumb .breadcrumb-item + .breadcrumb-item:before {
+    font-family: "Ionicons";
+}
+ol.breadcrumb {
+    padding: 10px 40px;
+    font-size: 15px;
+}
+h2 {
+font-weight: 600;
+color: rgb(63, 63, 63);
+padding: 10px 40px;
+}
+.click{
+  color: rgb(255, 120, 120);
+  padding: 0px 5px;
+}
+:hover.click {
+    color: rgb(0, 0, 0);
+}
+label {
+    padding: 10px;
+    font-size: 14px;
+}
+.quick-login-form {
+    font-size: 13px;
+    color: rgb(121, 121, 121);
+    
+}
+a.btn.btn-outlined.me-3 {
+    font-size: 13px;
+    color: rgb(121, 121, 121);
+    border: 1px solid #777777;
+}
+:hover.btn.btn-outlined.me-3 {
+    background-color:rgb(233, 17, 17) ;
+    color: rgb(0, 0, 0);
+   
+}
+input#quick-user {
+    display: flex;
+    padding: 0px 50px;
+}
+input#quick-pass {
+    display: flex;
+    padding: 0px 50px;
+}
+.checkout_coupon {
+    padding: 20px;
+    border: 1px solid #a9a9a9;
+}
+input#golo {
+    padding: 10px;
+    background-color: #dbdbdb;
+    border: none;
+}
+a#lmi {
+    border: 1px solid #d1d1d1;
+    padding: 10px 10px;
+}
+button#holo {
+    font-size: 14px;
+    padding: 10px;
+    background-color: #ededed;
+    border-top:2px solid #ff0000 ;
+}
+input[type="text"] {
+    display: flex;
+    padding: 5px 40px;
+    background-color: #dbdbdb;
+    border: none;
+}
+input[type="email"] {
+    padding: 5px 40px;
+    background-color: #dbdbdb;
+    border: none;
+}
+button#cila {
+    padding: 5px 80px;
+    background-color: #dbdbdb;
+border-radius: 0;
+}
+textarea#order-note {
+    display: flex   ;
+    padding: 10px;
+}
+li {
+    list-style: none;
+   
+}
+.checkout-cart-total {
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 35px 30px;
+}
+span.right {
+    float: right;
+
+}
+.dicuc{
+    font-size: 13px;
+    border-bottom: 1px solid #dfdfdf ;
+}
+.checkout-cart-total p {
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 600;
+    color: #333;
+    padding: 10px 0;
+    border-bottom: 1px solid #dfdfdf;
+    margin: 0;
+}
+.banana {
+    font-size: 14px;
+}
+button#vacaa {
+    padding: 10px;
+    border: none;
+    background-color: #ff0000;
+}
+main {
+    overflow: hidden;
+}

@@ -5,27 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Store</title>
+    <title>Out events</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css ">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="shortcut icon"
         href="https://scontent.fdad7-1.fna.fbcdn.net/v/t39.30808-6/337100965_3497961447157482_3915042219012048561_n.jpg?stp=dst-jpg_p843x403&_nc_cat=109&ccb=1-7&_nc_sid=5cd70e&_nc_ohc=GqPd9OqzQGwAX-GYRkw&_nc_ht=scontent.fdad7-1.fna&oh=00_AfAZk-v5L-CrKcSJvZGibtMWgua-aiMJW6asjQTnvwnTpw&oe=643901BD"
         type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
-    <link rel="stylesheet" href="css/store.css">
+    <link rel="stylesheet" href="css/out events.css">
     <link rel="stylesheet" href="css/lamdn.css">
 </head>
-<script>
-    $(document).ready(function () {
-        $('.accordion-header').click(function () {
-            $(this).parent().children('.accordion-body').slideToggle();
-        });
-    });
-</script>
+
 
 <body>
-
     <header>
         <div class="header-top bg-body-tertiary">
             <div class=" container">
@@ -266,7 +258,7 @@
                                 <div class="navbar-nav flex-md-row" style="column-gap: 10px;">
 
                                     <ul class="mona">
-                                        <a class="nav-link active " href="trangchu.html">HOME</a>
+                                        <a class="nav-link active " href="#">HOME</a>
                                         <ul class="monu ">
                                             <li class="menu-item-34 my-2">
                                                 <a href="trangchu.html" aria-current="page"><span>Home
@@ -437,351 +429,326 @@
         </div>
         </div>
     </header>
+
     <main>
+
 
         <div class="elementor-widget">
             <div class="sc_layouts_title sc_align_center with_content without_image without_tint">
                 <div class="sc_layouts_title_content">
                     <div class="sc_layouts_title_title">
-                        <h1 class="sc_layouts_title_caption">Shop</h1>
+                        <h1 class="sc_layouts_title_caption">Upcoming Events</h1>
                     </div>
                     <div class="sc_layouts_title_breadcrumbs">
                         <div class="breadcrumbs"><a class="breadcrumbs_item home underline_hover"
                                 href="https://booklovers.ancorathemes.com/">Home</a><span
-                                class="breadcrumbs_delimiter"></span>-<span class="breadcrumbs_item current">Shop</span>
+                                class="breadcrumbs_delimiter"></span>-<span class="breadcrumbs_item current">Upcoming
+                                Events</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="container my-5">
-            <div class="row">
-                <div class="col-12 col-lg-4">
-                    <div class="wapper">
-                        <div class="accordion">
-                            <div class="accordion-header">
-                                <h4>CATEGORY</h4>
-                                <i class="fa-solid fa-angle-down" style="color: #000000;"></i>
-                            </div>
-                            <div class="sida"></div>
+
+
+        <div class="container">
+            <div class="coc my-5">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1"><svg xmlns="" width="16" height="16"
+                            fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg></span>
+                    <input type="text" class="form-control" placeholder="Search for events" aria-label="Username"
+                        aria-describedby="basic-addon1">
+                    <p class="solo m-3">FIND EVENTS
+
+                    </p>
+                </div>
+
+                <div class="btn-group m-2">
+                    <a href="#" class="sala m-2">List</a>
+                    <a href="#" class="sala m-2">Month</a>
+                    <a href="#" class="sala m-2">Day</a>
+                </div>
+            </div>
+            <div class="cuso">
+                <div class="cosu">
+                    Today
+                </div>
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item" style="border: none;">
+                        <h2 class="accordion-header">
+                            <button id="cibi" class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                Now
+                                -
+                                Feb 16, 2025
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body">
-                                <span id="sanghi" class=" sadi my-2">All categories</span>
-                                <span id="sanghi" class=" sadi my-2">Uncategorized</span>
-                                <span id="sanghi" class=" sadi my-2">Drama</span>
-                                <span id="sanghi" class=" sadi my-2">Mystery</span>
-                                <span id="sanghi" class=" sadi my-2">Novels</span>
-                                <span id="sanghi" class=" sadi my-2">Recipe Books</span>
+                                <table id="wp-calendar" class="wp-calendar-table">
+
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" title="Monday">M</th>
+                                            <th scope="col" title="Tuesday">T</th>
+                                            <th scope="col" title="Wednesday">W</th>
+                                            <th scope="col" title="Thursday">T</th>
+                                            <th scope="col" title="Friday">F</th>
+                                            <th scope="col" title="Saturday">S</th>
+                                            <th scope="col" title="Sunday">S</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td colspan="5" class="pad">&nbsp;</td>
+                                            <td>1</td>
+                                            <td>2</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>4</td>
+                                            <td>5</td>
+                                            <td>6</td>
+                                            <td>7</td>
+                                            <td>8</td>
+                                            <td>9</td>
+                                        </tr>
+                                        <tr>
+                                            <td>10</td>
+                                            <td>11</td>
+                                            <td>12</td>
+                                            <td>13</td>
+                                            <td>14</td>
+                                            <td>15</td>
+                                            <td id="today">16</td>
+                                        </tr>
+                                        <tr>
+                                            <td>17</td>
+                                            <td style="background-color: #ff0000;">18</td>
+                                            <td>19</td>
+                                            <td>20</td>
+                                            <td>21</td>
+                                            <td>22</td>
+                                            <td>23</td>
+                                        </tr>
+                                        <tr>
+                                            <td>24</td>
+                                            <td>25</td>
+                                            <td>26</td>
+                                            <td>27</td>
+                                            <td>28</td>
+                                            <td>29</td>
+                                            <td>30</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
-
-                        <div class="accordion my-5">
-                            <div class="accordion-header">
-                                <h4>AUTHOR</h4>
-                                <i class="fa-solid fa-angle-down" style="color: #000000;"></i>
-                            </div>
-                            <div class="sida"></div>
-                            <div class="accordion-body">
-
-                                <span id="sanghi" class=" sadi my-2">Burt Geller</span>
-                                <span id="sanghi" class=" sadi my-2">Candy Carson</span>
-                                <span id="sanghi" class=" sadi my-2">Drew Berrymore</span>
-                                <span id="sanghi" class=" sadi my-2">Karen Perry</span>
-                                <span id="sanghi" class=" sadi my-2">Richard Mann</span>
-
-                            </div>
-                        </div>
-                        <div class="accordion my-5">
-                            <div class="accordion-header">
-                                <h4>FORMAT</h4>
-                                <i class="fa-solid fa-angle-down" style="color: #000000;"></i>
-                            </div>
-                            <div class="sida"></div>
-                            <div class="accordion-body">
-                                <span id="sanghi" class=" sadi my-2">Online Book</span>
-                                <span id="sanghi" class=" sadi my-2">Paper Book</span>
-
-
-                            </div>
-                        </div>
-                        <div class="accordion my-5">
-                            <div class="accordion-header">
-                                <h4>RATING</h4>
-                                <i class="fa-solid fa-angle-down" style="color: #000000;"></i>
-                            </div>
-                            <div class="sida"></div>
-                            <div class="accordion-body">
-                                <span id="sanghi" class=" sadi my-2">Burt Geller</span>
-                                <span id="sanghi" class=" sadi my-2">Candy Carson</span>
-                                <span id="sanghi" class=" sadi my-2">Drew Berrymore</span>
-                                <span id="sanghi" class=" sadi my-2">Karen Perry</span>
-                                <span id="sanghi" class=" sadi my-2">Richard Mann</span>
-
-                            </div>
-                        </div>
-
-                        <div class="accordion my-5">
-                            <div class="accordion-header">
-                                <h4>PRICE</h4>
-                                <i class="fa-solid fa-angle-down" style="color: #000000;"></i>
-                            </div>
-
-                        </div>
-
-                        <h4
-                            style="border-bottom: 1px solid #a8a8a8;width: 70px; height: 100px; display: flex; column-gap: 125px; align-items: center; color: #000000; white-space: nowrap;">
-                            RECENT PRODUCTS <i class="fa-solid fa-chevron-down"
-                                style="color: #000000; font-size: 15px;"></i>
-                        </h4>
-                        <ul class="product_list_widget my-5">
-                            <li class="">
-                                <a href="stores.html">
-                                    <img width="400" height="600"
-                                        src="https://booklovers.ancorathemes.com/wp-content/uploads/2020/05/book12-copyright-400x600.jpg"
-                                        class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt=""
-                                        decoding="async" loading="lazy"> <span class="product-title"> a Really
-                                        Strange Story</span>
-                                </a>
-
-                                <span class="woocommerce-Price-amount amount"><bdi><span
-                                            class="woocommerce-Price-currencySymbol">$</span>8.00</bdi></span> – <span
-                                    class="woocommerce-Price-amount amount"><bdi><span
-                                            class="woocommerce-Price-currencySymbol">$</span>18.00</bdi></span>
-                            </li>
-                            <li class="my-3">
-                                <a href="stores.html">
-                                    <img width="400" height="600"
-                                        src="https://booklovers.ancorathemes.com/wp-content/uploads/2020/05/book8-copyright-400x600.jpg"
-                                        class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt=""
-                                        decoding="async" loading="lazy"> <span class="product-title">New Galaxy</span>
-                                </a>
-
-                                <span class="woocommerce-Price-amount amount"><bdi><span
-                                            class="woocommerce-Price-currencySymbol">$</span>7.90</bdi></span> – <span
-                                    class="woocommerce-Price-amount amount"><bdi><span
-                                            class="woocommerce-Price-currencySymbol">$</span>16.90</bdi></span>
-                            </li>
-                        </ul>
-
-
-
-
-
                     </div>
+                </div>
 
-
-
-
-
-
-
-
-
-
-
+            </div>
+            <div class="riba my-5">
+                April 2023
+                <div class="saba m-3">
 
                 </div>
-                <div class="col-12 col-lg-8">
-                    <div class="container">
-                        <div class="csb">
-                            <div class="csv">Showing all 12 results
+            </div>
+            <div class="xaa my-5">
+                <div class="xii m-3">
+                    SAT
+                    22
+                </div>
+                <div class="xee m-3">
+                    <div class="mee">
+                        <p class="mii"> Apr 13, 2023, 10:00 am - Apr 20, 2024, 4:30 pm
+                        </p>
+                        <h6>Book lovers night</h6>
+                        <p class="mre my-3">Manhattan Club 350 5th Ave, New York, NY, United States</p>
+                        <p class="mbd">
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt
+                            ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et…
 
-                            </div>
-                            <div class="accordion accordion-flush" id="accordionFlushExample">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseOne">
-                                            Sort by latest
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapseOne" class="accordion-collapse collapse"
-                                        data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body-y">
-                                            <p class="csf" href="">Sort by popularity</p>
-                                            <p class="csf" href="">Sort by average rating</p>
-                                            <p class="csf" href="">Sort by latest</p>
-                                            <p class="csf" href="">Sort by price: low to high</p>
-                                            <p class="csf" href="">Sort by price: high to low</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                            </div>
-                        </div>
-                        <div class="row  gy-5 row-cols-2 row-cols-md-3 row-cols-lg-4 border-0">
-
-                            <div class="col">
-
-                                <div class="product-item bg-white p-3">
-                                    <div class="item-label">
-
-                                    </div>
-                                    <img class="img-fluid"
-                                        src="https://booklovers.ancorathemes.com/wp-content/uploads/2020/05/book11-copyright-400x600.jpg"
-                                        alt="">
-
-                                    <h4 class="mt-3">A Doctor in the House</h4>
-                                    <p class="mt-2">Candy Carson</p>
-                                    <strong class="text-danger">$6.50 – $16.99</strong>
-
-
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="product-item bg-white p-3">
-                                    <div class="item-label">
-
-                                    </div> <img class="img-fluid"
-                                        src="https://booklovers.ancorathemes.com/wp-content/uploads/2020/05/book13-copyright-400x600.jpg"
-                                        alt="">
-
-                                    <h4 class="mt-3">Wildflower </h4>
-                                    <p class="mt-2">Drew Berrymore</p>
-                                    <strong class="text-danger">$10.99 – $20.00</strong>
-
-
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="product-item bg-white p-3">
-                                    <div class="item-label">
-
-                                    </div><img class="img-fluid"
-                                        src="https://booklovers.ancorathemes.com/wp-content/uploads/2020/05/book8-copyright-400x600.jpg"
-                                        class="card-img-top" alt="">
-                                    <h4 class="mt-3">New Galaxy </h4>
-                                    <p class="mt-2">Richard Mann</p>
-                                    <strong class="text-danger">$7.90 – $16.90</strong>
-
-
-
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="product-item bg-white p-3">
-                                    <div class="item-label">
-
-                                    </div><img class="img-fluid"
-                                        src="https://booklovers.ancorathemes.com/wp-content/uploads/2020/05/book5-copyright-400x600.jpg"
-                                        alt="">
-                                    <h4 class="mt-3"> The Long Road to the Deep Silence</h4>
-                                    <p class="mt-2">Richard Mann</p>
-                                    <strong class="text-danger">$12.00 – $22.00 </strong>
-
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="product-item bg-white p-3 ">
-                                    <img class="img-fluid"
-                                        src="https://booklovers.ancorathemes.com/wp-content/uploads/2020/05/book4-copyright-400x600.jpg"
-                                        alt="">
-                                    <h4 class="mt-3">Life in the Gardene</h4>
-                                    <p class="mt-2">Candy Carson</p>
-                                    <strong class="text-danger">$11.99 – $25.00 </strong>
-
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="product-item bg-white p-3"><img class="img-fluid"
-                                        src="https://booklovers.ancorathemes.com/wp-content/uploads/2020/05/book12-copyright-400x600.jpg"
-                                        alt="">
-                                    <h4 class="mt-3">It’s a Really Strange Story</h4>
-                                    <p class="mt-2">Burt Geller</p>
-                                    <strong class="text-danger">$8.00 – $18.00 </strong>
-
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="product-item bg-white p-3"><img class="img-fluid"
-                                        src="https://booklovers.ancorathemes.com/wp-content/uploads/2020/05/book3-copyright-400x600.jpg"
-                                        alt="">
-                                    <h4 class="mt-3">The Son</h4>
-                                    <p class="mt-2">Burt Geller</p>
-                                    <strong class="text-danger">$12.00 – $21.00</strong>
-
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="product-item bg-white p-3"><img class="img-fluid"
-                                        src="https://booklovers.ancorathemes.com/wp-content/uploads/2020/05/book9-copyright-1-400x600.jpg"
-                                        alt="">
-                                    <h4 class="mt-3">Lonely Man in White Hat</h4>
-                                    <p class="mt-2">Burt Geller</p>
-                                    <strong class="text-danger">$10.00 – $19.00 </strong>
-
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="product-item bg-white p-3"><img class="img-fluid"
-                                        src="https://booklovers.ancorathemes.com/wp-content/uploads/2020/05/book1-copyright-400x600.jpg"
-                                        alt="">
-                                    <h4 class="mt-3">Let the Sun Shine</h4>
-                                    <p class="mt-2">Richard Mann</p>
-                                    <strong class="text-danger">$24.00 </strong>
-
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="product-item bg-white p-3"><img class="img-fluid"
-                                        src="https://booklovers.ancorathemes.com/wp-content/uploads/2020/05/book2-copyright-400x600.jpg"
-                                        alt="">
-                                    <h4 class="mt-3">The Forest</h4>
-                                    <p class="mt-2">Karen Perry</p>
-                                    <strong class="text-danger">$8.00 – $15.00 </strong>
-
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="product-item bg-white p-3"><img class="img-fluid"
-                                        src="https://booklovers.ancorathemes.com/wp-content/uploads/2020/05/book6-copyright-400x600.jpg"
-                                        alt="">
-                                    <h4 class="mt-3">A Banquet of Mouse</h4>
-                                    <p class="mt-2">Richard Mann</p>
-                                    <strong class="text-danger">$12.00 – $18.00 </strong>
-
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="product-item bg-white p-3"><img class="img-fluid"
-                                        src="https://booklovers.ancorathemes.com/wp-content/uploads/2020/05/book10-copyright-400x600.jpg"
-                                        alt="">
-                                    <h4 class="mt-3">The Story About Me</h4>
-                                    <p class="mt-2">Drew Berrymore </p>
-                                    <strong class="text-danger">$12.00 $10.00
-                                    </strong>
-
-
-                                </div>
-                            </div>
-
-
-                        </div>
-
-
-
-
-
+                        </p>
                     </div>
-
-                    <div>
-
-                    </div>
-
-
-
-
-
-
-
-
-
+                    <img class="sii"
+                        src="https://booklovers.ancorathemes.com/wp-content/uploads/2020/04/post32-copyright.jpg"
+                        alt="">
+                </div>
+            </div>
+            <div class="riba my-5">
+                June 2023
+                <div class="saba m-3">
 
                 </div>
             </div>
 
-            <!--  -->
+            <div class="xaa my-5">
+                <div class="xii m-3">
+                    SUN
+                    4
+                </div>
+                <div class="xee m-3">
+                    <div class="mee">
+                        <p class="mii"> Jun 4, 2023, 8:00 am - Jun 9, 2024, 5:00 pm
+                        </p>
+                        <h6>Time for books discussion
+                        </h6>
+                        <p class="mre my-3">Manhattan Club 350 5th Ave, New York, NY, United States</p>
+                        <p class="mbd">
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+                            et…
+
+
+
+                        </p>
+                    </div>
+                    <img class="sii"
+                        src="https://booklovers.ancorathemes.com/wp-content/uploads/2020/04/post31-copyright.jpg"
+                        alt="">
+                </div>
+            </div>
+
+            <div class="riba my-5">
+                December 2023
+                <div class="saba m-3">
+
+                </div>
+            </div>
+
+            <div class="xaa my-5">
+                <div class="xii m-3">
+                    FRI
+                    15
+                </div>
+                <div class="xee m-3">
+                    <div class="mee">
+                        <p class="mii"> December 15, 8:00 am - December 30, 4:30 pm
+                        </p>
+                        <h6>Children’s book authors meet & greet
+                        </h6>
+                        <p class="mre my-3">Manhattan Club 350 5th Ave, New York, NY, United States</p>
+                        <p class="mbd">
+                            Dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernaturaut odit aut
+                            fugit, sed quia consequuntur. Dicta sunt explicabo.
+
+
+
+                        </p>
+                    </div>
+                    <img class="sii"
+                        src="https://booklovers.ancorathemes.com/wp-content/uploads/2020/05/post8-copyright.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="riba my-5">
+                March 2024
+                <div class="saba m-3">
+
+                </div>
+            </div>
+
+            <div class="xaa my-5">
+                <div class="xii m-3">
+                    TUE
+                    19
+                </div>
+                <div class="xee m-3">
+                    <div class="mee">
+                        <p class="mii"> Mar 19, 2024, 8:00 am - 5:00 pm
+                        </p>
+                        <h6>Festival of old films
+                        </h6>
+                        <p class="mre my-3">Manhattan Club 350 5th Ave, New York, NY, United States</p>
+                        <p class="mbd">
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+                            et…
+
+
+
+
+
+                        </p>
+                    </div>
+                    <img class="sii"
+                        src="https://booklovers.ancorathemes.com/wp-content/uploads/2020/04/post34-copyright.jpg"
+                        alt="">
+                </div>
+            </div>
+
+            <div class="xaa my-5">
+                <div class="xii m-3">
+                    THU
+                    21
+                </div>
+                <div class="xee m-3">
+                    <div class="mee">
+                        <p class="mii"> Mar 21, 2024, 9:00 am - 11:30 pm
+                        </p>
+                        <h6>English speaking club
+                        </h6>
+                        <p class="mre my-3">Manhattan Club 350 5th Ave, New York, NY, United States</p>
+                        <p class="mbd">
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+                            et…
+
+
+
+
+
+
+
+                        </p>
+                    </div>
+                    <img class="sii"
+                        src="https://booklovers.ancorathemes.com/wp-content/uploads/2020/04/post35-copyright.jpg"
+                        alt="">
+                </div>
+            </div>
+
+            <div class="riba my-5">
+                March 2024
+                <div class="saba m-3">
+
+                </div>
+            </div>
+
+            <div class="xaa my-5">
+                <div class="xii m-3">
+                    FRI
+                    12
+                </div>
+                <div class="xee m-3">
+                    <div class="mee">
+                        <p class="mii"> Apr 12, 2024, 1:30 pm - Jun 28, 2025, 5:00 pm
+                        </p>
+                        <h6>Sunday evening poetry
+                        </h6>
+                        <p class="mre my-3">Manhattan Club 350 5th Ave, New York, NY, United States</p>
+                        <p class="mbd">
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+                            et…
+                        </p>
+                    </div>
+                    <img class="sii"
+                        src="https://booklovers.ancorathemes.com/wp-content/uploads/2020/04/post33-copyright.jpg"
+                        alt="">
+                </div>
+            </div>
+
+
+
             <div class="cabi">
                 <div class="rubi">
                     Get -30% purchase
@@ -791,34 +758,7 @@
                     class="sc_button sc_button_shadow hide_on_mobile sc_button_default sc_button_size_normal sc_button_icon_left"><span
                         class="sc_button_text"><span class="sc_button_title">MORE INFO</span></span></a>
             </div>
-
-
-
-
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -827,7 +767,7 @@
     </main>
     <footer>
         <div class="container">
-            <div class="moni">
+            <div class="moni my-5">
                 <div class="row">
                     <div class="col-md-3 col-sm-12">
                         <a class="navbar-brand justify-content-lg-start"
@@ -925,6 +865,7 @@
         </div>
         </div>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js
     "></script>
     <script>
@@ -940,6 +881,9 @@
 
         searchButton.addEventListener('click', toggleSearch);
         toggleButton.addEventListener('click', toggleSearch);
+
+
+
     </script>
 </body>
 
