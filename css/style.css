@@ -191,7 +191,10 @@ li.menu-item {
   text-decoration: underline;
   color: #ff0000;
 }
-
+button.btn-info a {
+  text-decoration: none;
+  color: #000000;
+}
 dl,
 ol,
 ul {
