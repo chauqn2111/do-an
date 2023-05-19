@@ -1,11 +1,4 @@
-
-
-
-/* css đánh giá sao */
-
-
-
-   .rating input[type="radio"] {
+.rating input[type="radio"] {
     display: none;
   }
   
@@ -81,4 +74,17 @@ button.btn.btn-primary.m-3:hover {
   transform: scale(1.1);
   color: coral;
   background-color: beige;
+}
+h5.card-title {
+  width: 100%;
+  height: auto;
+  display: inline-flex;
+  margin-bottom: 5px;
+}
+button.laviem {
+  background-color: transparent;
+        border: solid #6a6767eb 0.7px;
+        padding: 5px 30px;
+        text-transform: uppercase;
+        width: 80%;
 }
